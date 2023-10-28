@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="website Icon" type="png" href="img/BEEALIVE.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link
+  rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="styles/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div>
+            <i  id="burguer"class="material-symbols-outlined" onclick="clickMenu()"> menu </i>
+           <div class="imagem">
+           <h2>BEE ALIVE</h2>
+           <img  class="abelha"src="img/BEEALIVE.png" width="100px">
+       </div>
+       <div class="cabecalho"  id="menu" onclick="clickLog()" style="display:none;">
+           <hr>
+       <a href="metodologia.html">Metodologia</a>
+       <a href="profissionais.html">Conheça nossos profissionais</a>
+       <a href="empresas.html">Empresas parceiras</a>
+    
+       <button class="btndropdown"  id="menusolucao" onclick="clickSolu()">Nossas soluções <span  id="expande"class="material-symbols-outlined">expand_more</span>
+          
+       </button>
+       <n id="botao" style="display: none;">
+           <nav> <a href="situdcrise.html">Situações de Crise</a>
+            <a href="psicoterapia.html">Psicoterapia</a>
+            <a href="rodacnvs.html">Terapia em grupo</a>
+            <a href="diversidade.html">Diversidade</a>
+            <a href="inteliemoci.html">Inteligência emocional</a>
+            <a href="workepalestra.html">Workshops e Palestras</a>
+   
+        </nav>
+           </div>
+
+    </div>
+   </header>
+
+   <div class="container">
+    <div class="img">
+        <img src="img/BEEALIVE.png" alt=""width="150px">
+    </div>
+    
+    <form id="login">
+    <p id="email">
+   
+    <input type="text" name="email" id="email" placeholder="Email"  required></input>
+</p>
+<p id="senha">
+  
+    <input type="password" name="password" id="password" placeholder="Senha"  required></input>
+    <span class="show-password" onclick="togglePasswordVisibility()">&#128065;</span>
+</p>
+<button id="login" type="submit">Login</button></a>
+<a href="#" id="botao2">Esqueceu a senha?</a>
+<a href="cadstro.html" id="botao">Cadastre-se</a>
+    </form>
+   </div>
+
+  
+</body>
+<script src="javascript/login.js"></script>
+</html>

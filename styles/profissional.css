@@ -1,0 +1,393 @@
+/*slider*/
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+ 
+ 
+  
+  font-family: "Poppins", sans-serif;
+}
+header{
+    width: 100%;
+    background-color: #24346b;
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: -10px;
+   
+}
+/*hamburger*/
+i#burguer{
+  margin-left: 10px;
+  color:white;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color:#24346b ;
+  height: 37px;
+  width: 39px ;
+  font-size: 40px;
+  margin-top: 20px;
+ 
+}
+i#burguer:hover{
+  background-color: white;
+  color: #24346b;
+  transition: 0.6s ease;
+}  
+/*cabeçalho*/
+menu#cabecalho,a{
+  position: relative;
+  margin-left: 14px;
+  display: block;
+  padding: 3px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Arial;
+}
+menu#cabecalho ,a:hover{
+  color: aqua;
+
+}
+.btndropdown{
+  margin-top: 15px;
+  font-size: 15px;
+  font-family: Arial;
+  color: #f2f2f2;
+  border: none;
+  background-color: #24346b;
+}
+.btndropdown:hover{
+  transition: 0.3s;
+  font-size: 18px;
+  color: aquamarine;
+}
+span#expande{
+  color: #e2e2e2;
+  margin:-10%;
+  cursor: pointer;
+}
+span#expande:hover{
+  color: aqua;
+
+}
+#botao > nav{
+  padding-top: 30px;
+  text-align: left;
+  margin-left: 10px;
+  height: 180px;
+  width: 230px;
+  background:transparent;
+  display:block;
+  color: white;
+
+}
+/*imagem logo*/
+.foto{
+  height: 580px;
+  width: 102%;
+  margin-left: -1%;
+}
+
+.abelha{
+  margin-left: -20px;
+}
+
+.imagem{
+  margin-top: -60px;
+  margin-left: 85%;
+  display: flex;
+}
+.imagem > h2{
+  margin-top: 15px;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+/*fim*/
+
+/*fim do cabeçalho*/
+
+body {
+  background: #335577;
+}
+/*priemiro perfil = caio*/
+#mensagem{
+  position: relative;
+  margin-top: 40%;
+  background-color: #f2f2f2;
+  text-align: center;
+  align-items: end;
+  height: 900px;
+  width: 75%;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 13%;
+  opacity: 90%;
+  
+}
+#fechar{
+  cursor: pointer;
+  margin-left: 90%;
+  font-size: 40px;
+}
+#fechar:hover{
+  scale: 0.85;
+  color: red;
+  transition: 0.6s;
+}
+.perfil img{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+#cainho{
+  color: red;
+}
+li{
+  list-style: none;
+}
+.especializacao{
+  font-size: 25px;
+}
+/*fim*/
+/*perfil 2 = anna araujo*/
+#mensagem2{
+  position: relative;
+  margin-top: 40%;
+  background-color: #f2f2f2;
+  text-align: center;
+  align-items: end;
+  height: 900px;
+  width: 75%;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 13%;
+  opacity: 90%;
+}
+/*fim*/
+/*perfil do fabio souza*/
+#mensagem3{
+  position: relative;
+  margin-top: 40%;
+  background-color: #f2f2f2;
+  text-align: center;
+  align-items: end;
+  height: 900px;
+  width: 75%;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 13%;
+  opacity: 90%;
+}
+/*fim*/
+/*perfil da isabelle rocha*/
+#mensagem4{
+  position: relative;
+  margin-top: 40%;
+  background-color: #f2f2f2;
+  text-align: center;
+  align-items: end;
+  height: 900px;
+  width: 75%;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 13%;
+  opacity: 90%;
+}
+/*fim*/
+/*perfil do cauan de souza*/
+#mensagem5{
+  position: relative;
+  margin-top: 40%;
+  background-color: #f2f2f2;
+  text-align: center;
+  align-items: end;
+  height: 900px;
+  width: 75%;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 13%;
+  opacity: 90%;
+}
+#mensagem6{
+  position: relative;
+  margin-top: 40%;
+  background-color: #f2f2f2;
+  text-align: center;
+  align-items: end;
+  height: 900px;
+  width: 75%;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 13%;
+  opacity: 90%;
+}
+/*fim*/
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+ margin-top: 10%;
+ position:absolute;
+ align-items: center;
+ justify-content: center;
+ margin-left: 8%;
+ 
+
+}
+.wrapper #left,
+.wrapper #right {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+
+}
+.wrapper #left:active,
+.wrapper #right:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper #left{
+  left: -22px;
+}
+.wrapper #right{
+  right: -22px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card .img {
+  background: #8B53FF;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+
+.btns , button{
+  display: flex;
+  cursor: pointer;
+}
+
+.btns button:last-of-type {
+  margin-left: 5px;
+}
+
+.btns button {
+  padding: 3px 25px;
+}
+.rating i{
+  color: yellow;
+}
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+@media  screen and  (max-width:1000px){
+  header{
+    width: 102%;
+    height: 80px;
+  }
+  .imagem{
+    margin-left: 50%;
+    display: block;
+  }
+  .abelha{
+    margin-top: -50%;
+    height: 90px;
+    margin-left: 50%;
+  }
+  h2{
+    margin-top: 5%;
+  }
+  .wrapper{
+    margin-left: 1px;
+    margin-top: 40%;
+    position: none;
+  
+
+  }
+  .wrapper #right{
+    right: 1px;
+  }
+  #mensagem4 , #mensagem3, #mensagem2, #mensagem{
+    margin-top: 35rem;
+    height: 100%;
+    width: 80%;
+  }
+  #fechar{
+    cursor: pointer;
+    margin-left: 80%;
+  }
+  .cabecalho{
+    background-color: #24346b;
+    margin-top: -21px;
+    margin-left: -4px;
+    position: relative;
+  }
+}
