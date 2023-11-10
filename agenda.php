@@ -1,3 +1,26 @@
+<?php
+$eventos = [];
+ 
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    $data = $_GET["data"];
+    $descricao = $_GET["descricao"];
+ 
+    if ($data && $descricao) {
+        $eventos[] = [
+            "data" => $data,
+            "descricao" => $descricao
+        ];
+    }
+}
+ 
+// Adicione aqui o código para salvar os eventos em um banco de dados ou em um arquivo.
+// Exemplo:
+// $jsonEventos = json_encode($eventos);
+// file_put_contents("eventos.json", $jsonEventos);
+ 
+header("Location: index.html");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +32,7 @@
 <body>
     <div class="calendario">
         <div class="header">
-            <button onclick="mudarMes(-1)"><</button>
+            <button onclick="mudarMes(-1)"> < </button>
             <h2 id="titulo"></h2>
             <button onclick="mudarMes(1)"> > </button>
         </div>
