@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 // $jsonEventos = json_encode($eventos);
 // file_put_contents("eventos.json", $jsonEventos);
  
-header("Location: index.html");
+header("Location:");
 ?>
 
 <!DOCTYPE html>
