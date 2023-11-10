@@ -178,9 +178,9 @@ img.porcentagem {
   margin-top: 10%;
 }
 
-.containerr > .container {
+.containerr>.container {
   height: 200px;
-  box-shadow:none;
+  box-shadow: none;
 }
 
 /*fim*/
@@ -216,11 +216,8 @@ body {
 
 }
 
-@media (max-width: 60em) {
-  .grid {
-    grid-gap: 3rem;
-  }
-}
+
+
 
 .grid__item {
   background-color: #fff;
@@ -260,9 +257,34 @@ body {
   margin-bottom: 2.5rem;
 }
 
+.tudo {
+  display: flex;
+  justify-content: space-around;
+  margin-left: -5px;
+}
+
+.grid__item,
+.grid__item2,
+.grid__item3 {
+  flex: 1;
+  margin: 10px;
+  max-width: 400px;
+  /* ou outro valor que você preferir */
+}
+
+/* Media queries para tornar responsivo se necessário */
+
+@media screen and (max-width: 768px) {
+  .tudo {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 /*responsivo*/
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   header {
     margin-top: -21px;
     padding: 1px;
@@ -489,9 +511,8 @@ body {
 }
 
 .nossos {
-  margin-bottom: 0;
-  align-items: center;
-  display: inline-flex;
+  font-size: 45px;
+  margin-left: 40%;
 }
 
 
@@ -503,10 +524,26 @@ body {
 section>.clientes {
   display: flex;
   float: right;
-  margin-right: -215%;
+  margin-right: -10%;
   flex-wrap: wrap;
+  align-items: flex-end;
+  padding: 100px;
+  width: 80%;
   align-items: center;
-  padding: 100px 50px;
+  margin: 10px;
+}
+
+.clientess h2{
+  color: rgb(0, 0, 0);
+  width: 20%;
+  font-weight: 700;
+  
+}
+@media screen and (max-width: 768px) {
+  .clientes {
+    flex-direction:row-reverse;
+    align-items: center;
+  }
 }
 
 .body2 {
@@ -517,7 +554,9 @@ section>.clientes {
   background: #e2e2e2;
 
 }
-
+body2 > .container{
+  margin-left: 5%;
+}
 .container {
   width: 50%;
   height: 170vh;
@@ -525,6 +564,7 @@ section>.clientes {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
   margin-top: 20px;
 }
+
 
 .form-image {
   width: 60%;
@@ -641,13 +681,6 @@ section>.clientes {
   margin-top: 40px;
 }
 
-.dados {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
 .grid {
   width: 114rem;
   grid-gap: 6rem;
@@ -745,25 +778,6 @@ section>.clientes {
   margin-top: 5px;
 }
 
-.gallery {
-
-  display: flex;
-
-
-
-  width: 70px;
-
-  justify-content: space-between;
-
-  flex-wrap: wrap;
-  display: grid;
-  grid-template-columns: repeat(5, 400px);
-  grid-template-rows: repeat(3, 2fr);
-
-}
-
-
-
 figure {
   background-color: rgba(255, 255, 255, 0.877);
   border-radius: 20px;
@@ -772,17 +786,61 @@ figure {
   box-shadow: 2px 2px 2px #2a2a2b;
 
 }
-
-
-
 figcaption {
-
   text-align: center;
-
   padding: 20px;
-
   font-size: 30px;
-
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.caixa {
+  display: flex;
+  justify-content: space-between;
+}
 
+.gallery {
+  flex: 1;
+  margin-top: 60px;
+}
+
+/* Ajuste os estilos específicos conforme necessário */
+
+.gallery figure {
+ 
+  margin-left: 30%;
+}
+
+.gallery img {
+  width: 50%;
+  /* ou outro valor desejado */
+  margin-left: 120px;
+}
+
+.gallery figcaption {
+  margin-top: 10px;
+}
+
+.gallery a {
+  color: rgb(7, 145, 145);
+  font-size: 20px;
+  margin-left: 35px;
+}
+
+/* Estilos para a segunda galeria */
+
+.gallery:nth-child(2) img {
+  width: 40%;
+  margin-left: 80px;
+  margin-top: 9px;
+}
+
+.gallery:nth-child(2) figcaption {
+  margin-top: 20px;
+  font-size: 19px;
+}
+
+.gallery:nth-child(2) a {
+  font-size: 19px;
+  margin-left: 70px;
+  margin-top: 20px;
+  text-align: center;
 }
