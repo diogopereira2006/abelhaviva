@@ -1,0 +1,265 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #fbda61, #29ace0);}
+    .chat {
+        max-width: 1000px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    }
+    
+    .usuarios {
+        width: 20%;
+        background-color: #f0f0f0;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    .busca-usuario {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .busca-usuario input[type="text"] {
+        flex-grow: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    
+    .busca-usuario button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .busca-usuario button:hover {
+        background-color: #0056b3;
+    }
+    
+    .usuario {
+        margin-bottom: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .usuario img {
+        width: 70px;
+        height: 70px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    
+    .usuario span {
+        display: block;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+    
+    .conversa {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .mensagens {
+        flex-grow: 1;
+        max-height: 600px;
+        overflow-y: scroll;
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: #f7f7f7;
+    }
+    
+    .mensagem {
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        max-width: 70%;
+        word-wrap: break-word;
+    }
+    
+    .bot {
+        background-color: #007bff;
+        color: #fff;
+        align-self: flex-start;
+    }
+    
+    .usuarios {
+        width: 20%;
+        background-color: #f0f0f0;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* Alinhar à direita */
+        border-top-right-radius: 10px; /* Arredondar canto superior direito */
+        border-bottom-right-radius: 10px; /* Arredondar canto inferior direito */
+    }
+    
+
+    .usuario img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; /* Agora as imagens terão bordas redondas */
+        object-fit: cover;
+        border: 0.5px solid #75d8ff98;
+        margin-right: 10px;
+    }
+    
+    .usuario {
+        margin-bottom: 10px;
+        text-align: left;
+        cursor: pointer;
+        width: 150px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f7f7f7;
+        display: flex; /* Para alinhar a imagem e o texto na mesma linha */
+        align-items: center; /* Alinhar verticalmente a imagem e o texto */
+    }
+    
+    .usuario span {
+        font-weight: bold;
+    }
+    
+    
+    .entrada {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #fff;
+        border-top: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    
+    .entrada input[type="text"] {
+        flex-grow: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    
+    .entrada button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .entrada button:hover {
+        background-color: #0056b3;
+    }
+    
+    .telefone {
+        width: 25%;
+        background-color: #007bff;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .telefone input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    
+    .telefone button {
+        padding: 10px 20px;
+        background-color: #0056b3;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+
+    .comandos-bot {
+        display: flex;
+        justify-content: center; /* Agora os botões estarão centralizados */
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .mensagem.bot#agendarEvento,
+    .mensagem.bot#verificarEventos {
+        padding: 8px 15px; 
+        font-size: 14px; 
+        background-color: #f0f0f0; 
+        color: #333; 
+        cursor: pointer;
+    }
+    
+    .mensagem.bot#agendarEvento:hover,
+    .mensagem.bot#verificarEventos:hover {
+        background-color: #ddd; 
+    }
+    .botao {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .botao.agendar {
+        background-color: #a1a1a18c;
+        color: #fff;
+        margin-bottom: 20px;
+        border: #333 2px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .botao.verificar {
+        background-color: #a1a1a18c;
+        border: #333 2px;
+        color: #fff;
+        margin-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .botao:hover {
+        background-color: #a1a1a18c;
+    }
+    
