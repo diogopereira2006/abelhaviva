@@ -2,7 +2,7 @@
     $servidor = "localhost";
     $usuario = "root";
     //xampp nao usa senha
-    $senha = "";
+    $senha = "Diogo543210";
     $base = "empresa_login";
 
     try{

@@ -1,17 +1,17 @@
 <?php
-$eventos = [];
+//$eventos = [];
  
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
-    $data = $_GET["data"];
-    $descricao = $_GET["descricao"];
+//if ($_SERVER["REQUEST_METHOD"] == "GET") {
+   // $data = $_GET["data"];
+   // $descricao = $_GET["descricao"];
  
-    if ($data && $descricao) {
-        $eventos[] = [
-            "data" => $data,
-            "descricao" => $descricao
-        ];
-    }
-}
+    //if ($data && $descricao) {
+     //   $eventos[] = [
+         //   "data" => $data,
+           // "descricao" => $descricao
+       // ];
+   // }
+//}
  
 // Adicione aqui o código para salvar os eventos em um banco de dados ou em um arquivo.
 // Exemplo:
@@ -22,7 +22,7 @@ header("Location:");
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,14 +47,15 @@ header("Location:");
         </div>
         <div class="dias" id="dias"></div>
     </div>
-
-    <div class="evento-modal" id="eventoModal">
-        <span onclick="fecharModal()" class="fechar">&times;</span>
+ <form action="" method="post">
+        <span onclick="fecharModal()" class="fechar">Abrir</span>
+    <div class="eventoModal" id="eventoModal">
         <h3>Adicionar Evento</h3>
-        <input type="date" id="dataEvento">
-        <input type="text" id="descricaoEvento" placeholder="Descrição do Evento">
-        <button onclick="adicionarEvento()">Adicionar</button>
+        <input type="date" nome="dataEvento" id="dataEvento" required>
+        <input type="text" nome="descricaoEvento"id="descricaoEvento" placeholder="Descrição do Evento" required>
+        <button onclick="adicionarEvento()" type="submit">Adicionar</button>
     </div>
+</form>
 
     <script src="javascript/agenda.js"></script>
 </body>
