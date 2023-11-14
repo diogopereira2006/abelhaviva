@@ -41,7 +41,7 @@ function agendarEventos() {
 
     setTimeout(function() {
         var linkAgendarEventos = document.getElementById('linkAgendarEventos');
-        linkAgendarEventos.href = 'agenda.html'; // Substitua pelo destino desejado
+        linkAgendarEventos.href = 'agenda.php'; // Substitua pelo destino desejado
         linkAgendarEventos.click();
     }, 2000); // Espera 2 segundos antes de redirecionar
 }
@@ -56,7 +56,7 @@ function verificarEventos() {
 
     setTimeout(function() {
         var linkVerificarEventos = document.getElementById('linkVerificarEventos');
-        linkVerificarEventos.href = 'agenda.html'; // Substitua pelo destino desejado
+        linkVerificarEventos.href = 'agenda.php'; // Substitua pelo destino desejado
         linkVerificarEventos.click();
     }, 2000); // Espera 2 segundos antes de redirecionar
 }
@@ -115,5 +115,5 @@ const firebaseConfig = {
   });
   function conectarUsuario(elemento) {
     var nomeUsuario = elemento.getAttribute('data-usuario');
-    window.location.href = 'chat.html?usuario=' + encodeURIComponent(nomeUsuario);
+    window.location.href = 'agenda.html?usuario=' + encodeURIComponent(nomeUsuario);
 }

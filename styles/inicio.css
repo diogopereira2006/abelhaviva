@@ -49,35 +49,16 @@ a:hover {
   color: aqua;
 
 }
-
-.btndropdown {
-  margin-top: -10px;
-  font-size: 15px;
-  font-family: Arial;
-  color: #f2f2f2;
-  border: none;
-  background-color: #24346b;
-  cursor: pointer;
-  margin-left: 15px;
-}
-
-.cabecalho {
+#menu {
   background-color: #335577;
-  margin-top: -1%;
-  margin-left: 1%;
+  margin-top: -1.2%;
+  margin-left: -0.10%;
   width: 100%;
 }
 
 #botao {
   margin-top: 1%;
 }
-
-.btndropdown:hover {
-  transition: 0.3s;
-  font-size: 18px;
-  color: aquamarine;
-}
-
 span#expande {
   color: #e2e2e2;
   margin: -10%;
