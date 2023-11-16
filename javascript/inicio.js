@@ -52,3 +52,20 @@ function clickSolu(){
 }
 
 /*fim da solucao*/
+
+// Adicione ao seu arquivo JavaScript
+
+// Adicione ao seu arquivo JavaScript
+
+document.addEventListener('DOMContentLoaded', function () {
+    const baloes = document.querySelectorAll('.balao');
+
+    baloes.forEach(function (balao, index) {
+        balao.addEventListener('click', function () {
+            // Ação ao clicar no balão, como rolar para uma seção específica
+            // Substitua este trecho pelo código desejado
+            console.log('Clicou no balão ' + (index + 1));
+        });
+    });
+});
+

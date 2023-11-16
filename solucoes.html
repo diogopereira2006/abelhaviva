@@ -1,70 +1,73 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="styles/solucoes.css">
-    <title style="margin-top: 10px;">NOSSAS SOLUÇÕES</title>
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="styles/solucoes.css">
+        <title style="margin-top: 10px;">NOSSAS SOLUÇÕES</title>
+    </head>
 <body>
+    <div class="container">
+        <h1>Nossas Soluções</h1><br>
 
-    <h2
-        style="font-size: 50px; font-family: arial; text-align: center; margin-bottom: 5%; margin-top: 5rem; color: #fff;">
-        NOSSAS SOLUÇÕES</h2>
+        <div class="solucao" onclick="toggleAccordion(1)">
+            <img src="img/solução2.jpeg" alt="Solução 1">
+            <h2>Rodas de Conversa</h2>
+            <div class="descricao" id="descricao1">
+                <p>Rodas de conversa são uma prática de diálogo aberto que promove a troca de experiências e sentimentos entre os participantes. Nas empresas, ela é crucial para a saúde mental dos colaboradores, reduzindo o isolamento, identificando problemas precocemente e fortalecendo a cultura organizacional. Isso resulta em colaboradores mais engajados e um ambiente de trabalho mais saudável e produtivo.</p>
+            </div>
+        </div>
 
-    <div class="gallery">
-        <figure>
-            <img src="img/solução2.jpeg" width="100%">
-            <figcaption onclick="clicks()">Rodas de Conversa</figcaption>
-            <p id="click" style="display: none;">Rodas de conversa são uma prática de diálogo aberto que promove a troca de experiências e sentimentos entre os participantes. Nas empresas, ela é crucial para a saúde mental dos colaboradores, reduzindo o isolamento, identificando problemas precocemente e fortalecendo a cultura organizacional. Isso resulta em colaboradores mais engajados e um ambiente de trabalho mais saudável e produtivo.</p>
-        </figure>
-        <figure>
-            <img src="img/solução1.jpeg" width="100%">
-            <figcaption onclick="clickum()">Palestras e Workshops</figcaption>
-            <p id="click1" style="display: none;">Palestras e workshops são eventos informativos que oferecem conhecimento e habilidades aos colaboradores. As palestras são apresentações informativas conduzidas por especialistas, enquanto os workshops são atividades práticas e interativas. Ambas são essenciais para o desenvolvimento profissional, promovem o engajamento dos colaboradores e contribuem para um ambiente de trabalho mais produtivo e inovador.</p>
-        </figure>
-        <figure>
-            <img src="img/roda.png" width="100%">
-            <figcaption onclick="clickdois()">Terapia em Grupo</figcaption>
-            <p id="click2" style="display: none;">A terapia em grupo é uma forma de intervenção psicológica onde um terapeuta guia uma sessão com um grupo de pessoas que compartilham desafios ou questões semelhantes. Proporciona um espaço seguro para trocar experiências, oferecer apoio mútuo e adquirir novas perspectivas. Promove a redução do isolamento, o desenvolvimento de estratégias de enfrentamento e fortalece a autoestima dos participantes. É uma ferramenta valiosa na promoção da saúde mental e no bem-estar emocional.</p>
-        </figure>
-        <figure>
-            <img src="img/terapia.png" width="100%">
-            <figcaption onclick="clicktres()">Psicoterapia</figcaption>
-            <p id="click3" style="display: none;">A psicoterapia é um tratamento que envolve a interação entre um terapeuta e um cliente para abordar questões emocionais, comportamentais ou mentais. Proporciona um ambiente seguro para expressão de sentimentos, desenvolvimento de habilidades de enfrentamento e promoção de mudanças positivas. Contribui para o bem-estar emocional e melhoria da saúde mental.</p>
-        </figure>
-        <figure>
-            <img src="img/lideres.png" width="100%">
-            <figcaption onclick="clickquatro()">Capacitação de Líderes</figcaption>
-            <p id="click4" style="display: none;">A capacitação de líderes é um programa de desenvolvimento que visa aprimorar as habilidades de gestão e liderança de indivíduos em cargos de liderança. Envolve treinamento em comunicação, tomada de decisões, resolução de conflitos e motivação de equipes. Prepara os líderes para enfrentar desafios e contribui para um ambiente de trabalho mais produtivo, positivo e preparado.</p>
-        </figure>
-        <figure>
-            <img src="img/crise.png" width="100%">
-            <figcaption onclick="clickcinco()">Capacitação para Situações de Crise</figcaption>
-            <p id="click5" style="display: none;">A capacitação para situações de crise é um programa de treinamento que prepara indivíduos e equipes para lidar eficazmente com emergências. Enfoca o desenvolvimento de habilidades de resposta rápida, tomada de decisões sob pressão e coordenação eficiente durante momentos de crise. Contribui para a segurança e bem-estar da equipe e clientes, garantindo uma resposta eficaz em situações adversas.</p>
-        </figure>
-        <figure>
-            <img src="img/team building.png" width="100%">
-            <figcaption onclick="clickseis()">Ativiades de Team Building</figcaption>
-            <p id="click6" style="display: none;">As atividades de Team Building são exercícios em grupo que visam fortalecer a colaboração e a eficiência da equipe. Promovem comunicação, confiança e identificação das habilidades individuais. Contribuem para um ambiente de trabalho mais produtivo e coeso.</p>
-        </figure>
-        <figure>
-            <img src="img/homibonitodapascoalotto.png" width="100%">
-            <figcaption onclick="clicksete()">Atendimento Online 24 horas</figcaption>
-            <p id="click7" style="display: none;">O atendimento online 24 horas é um serviço que oferece suporte aos clientes de forma contínua através de plataformas digitais. Demonstra compromisso com a satisfação do cliente, proporciona flexibilidade e acessibilidade, e contribui para a fidelização e confiança dos clientes na empresa.</p>
-        </figure>
+        <div class="solucao" onclick="toggleAccordion(2)">
+            <img src="img/solução1.jpeg" alt="Solução 2">
+            <h2>Palestras e Workshops</h2>
+            <div class="descricao" id="descricao2">
+                <p>Palestras e workshops são eventos informativos que oferecem conhecimento e habilidades aos colaboradores. As palestras são apresentações informativas conduzidas por especialistas, enquanto os workshops são atividades práticas e interativas. Ambas são essenciais para o desenvolvimento profissional, promovem o engajamento dos colaboradores e contribuem para um ambiente de trabalho mais produtivo e inovador.</p>
+            </div>
+        </div>
+
+        <div class="solucao" onclick="toggleAccordion(3)">
+            <img src="img/roda.png" alt="Solução 3">
+            <h2>Terapia em Grupo</h2>
+            <div class="descricao" id="descricao3">
+                <p>A terapia em grupo é uma forma de intervenção psicológica onde um terapeuta guia uma sessão com um grupo de pessoas que compartilham desafios ou questões semelhantes. Proporciona um espaço seguro para trocar experiências, oferecer apoio mútuo e adquirir novas perspectivas. Promove a redução do isolamento, o desenvolvimento de estratégias de enfrentamento e fortalece a autoestima dos participantes. É uma ferramenta valiosa na promoção da saúde mental e no bem-estar emocional.</p>
+            </div>
+        </div>
+    
+<br>
+    <div class="solucao" onclick="toggleAccordion(4)">
+        <img src="img/terapia.png" alt="Solução 4">
+        <h2>Psicoterapia</h2>
+        <div class="descricao" id="descricao4">
+            <p>A psicoterapia é um tratamento que envolve a interação entre um terapeuta e um cliente para abordar questões emocionais, comportamentais ou mentais. Proporciona um ambiente seguro para expressão de sentimentos, desenvolvimento de habilidades de enfrentamento e promoção de mudanças positivas. Contribui para o bem-estar emocional e melhoria da saúde mental.</p>
+        </div>
     </div>
 
 
+<div class="solucao" onclick="toggleAccordion(5)">
+    <img src="img/lideres.png" alt="Solução 5">
+    <h2>Capacitação de Líderes</h2>
+    <div class="descricao" id="descricao5">
+        <p>A capacitação para situações de crise é um programa de treinamento que prepara indivíduos e equipes para lidar eficazmente com emergências. Enfoca o desenvolvimento de habilidades de resposta rápida, tomada de decisões sob pressão e coordenação eficiente durante momentos de crise. Contribui para a segurança e bem-estar da equipe e clientes, garantindo uma resposta eficaz em situações adversas.</p>
+    </div>
+</div>
 
 
+<div class="solucao" onclick="toggleAccordion(6)">
+    <img src="img/team building.png" alt="Solução 6">
+    <h2>Ativiades de Team Building</h2>
+    <div class="descricao" id="descricao6">
+        <p>As atividades de Team Building são exercícios em grupo que visam fortalecer a colaboração e a eficiência da equipe. Promovem comunicação, confiança e identificação das habilidades individuais. Contribuem para um ambiente de trabalho mais produtivo e coeso.</p>
+    </div>
+</div>
+</div>
 
     <script src="javascript/solucoes.js"></script>
 </body>
+</html>
