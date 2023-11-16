@@ -54,13 +54,13 @@ function mudarMes(valor) {
 // Função para abrir o modal de adição de evento
 function abrirModal() {
     var modal = document.getElementById("eventoModal");
-    modal.style.display = "block";
+    modal.style.display = "none";
 }
 
 // Função para fechar o modal de adição de evento
 function fecharModal() {
     var modal = document.getElementById("eventoModal");
-    modal.style.display = "none";
+    modal.style.display = "block";
 }
 
 // Função para adicionar um evento ao calendário

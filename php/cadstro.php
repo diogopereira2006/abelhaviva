@@ -20,7 +20,7 @@ $sql = "INSERT INTO empresa (nome_empresa ,email_empresarial ,plano ,senha , pag
 $resultado = mysqli_query($con, $sql);
 
 if ($resultado) {
-    header("location:../cadstro.php?status=ok");
+    header("location:../cadastro.php?status=ok");
 }else{
     echo "Erro ao cadastrar !". mysqli_connect_error();
 }
