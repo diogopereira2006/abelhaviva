@@ -1,28 +1,25 @@
 <?php
    
     require_once "conexao.php";
+
+
     if(isset($_POST['enviar'])){
-        $nome = $_POST["nome"];
+        $empresa = $_POST["empresa"];
         $email = $_POST["email"];
-        $plano = $_POST["plano"];
         $senha = $_POST["senha"];
-        $senhac = md5($senha);
-        $pagamento = $_POST["pagamento"];
-
-//conectando com o banco de dados
 
 
-//insere os dados da empresa na tabela "empresa"
-$sql = "INSERT INTO empresa (nome_empresa ,email_empresarial ,plano ,senha , pagamento) VALUES ('$nome' ,'$email' ,'$plano' ,'$senhac' , '$pagamento')";
+
+//insere os dados da empresa na tabela
+$sql = "INSERT INTO inicio_login (nomeda_empresa ,email_institu ,senha) VALUES ('$empresa' ,'$email' ,'$senha')";
 
 
 
 $resultado = mysqli_query($con, $sql);
-
 if ($resultado) {
-    header("location:../cadastro.php?status=ok");
+    header("location:../login.php?status=ok");
 }else{
-    echo "Erro ao cadastrar !". mysqli_connect_error();
+    echo "Erro em cadastrar!". mysqli_connect_error();
 }
 $con->close();
 

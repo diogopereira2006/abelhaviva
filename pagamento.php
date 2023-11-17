@@ -46,9 +46,7 @@
 
         <button class="botao-pagamento">Pagar</button>
     </div>
-<<<<<<< HEAD
     <script src="checkout.js"></script>
-=======
     <div class="checkout">
     <div class="opcao" id="opcao-cartao">
         <h2>Pagar com Cartão de Crédito</h2>
@@ -69,6 +67,6 @@
     </div>
 </div>
     <script src="javascript/checkout.js"></script>
->>>>>>> 2aa8da1d2158bff699836d2b775a13b52a6d9c42
+
 </body>
 </html>
