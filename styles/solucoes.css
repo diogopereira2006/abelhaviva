@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background: #aaddff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,7 +11,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 900px;
+    max-width: 800px; /* Ajuste a largura máxima conforme necessário */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -26,7 +26,7 @@ body {
     overflow: hidden;
     cursor: pointer;
     transition: box-shadow 0.3s ease;
-    flex-basis: calc(33.33% - 20px);
+    flex-basis: 100%; /* Ocupa 100% da largura */
 }
 
 .solucao img {
@@ -36,12 +36,21 @@ body {
 
 .solucao h2 {
     color: #333;
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 .descricao {
     display: none;
-    padding: 20px;
+    padding: 25px;
+}
+
+h1 {
+    width: 100%; /* Ocupa 100% da largura */
+    color: #ffffff;
+    margin-bottom: 8rem;
+    margin-top: 230rem;
+    text-align: center;
+    font-size: 3rem;
 }
 
 @media (max-width: 768px) {
@@ -49,9 +58,8 @@ body {
         padding: 0 20px;
     }
 
-    .solucao {
-        flex-basis: calc(50% - 20px);
+    .solucao, h1 {
+        flex-basis: 100%; /* Em telas menores, também ocupa 100% da largura */
     }
 }
-
 
