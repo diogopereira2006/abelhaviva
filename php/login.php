@@ -1,22 +1,35 @@
 <?php
-include_once "conexao.php";
+
+if(isset($_POST['enviar']) && !empty($_POST['email']) && !empty($_POST['senha']))
+{
+    include_once "conexao.php";
+    $email = $_POST['email'];
+    $senha= $_POST['senha'];
+
+    $sql = "SELECT * FROM inicio_login WHERE email_institu = '$email' and senha = 'senha'";
+
+    $result = $con->query($sql);
 
 
-if(isset($_POST['enviar'])){
-    $email = $_POST["email"];
-    $senha = $_POST["senha"];
-}
 
-$sql = "INSERT INTO login_colaborador (email, senha) VALUES ('$email','$senha')";
+    if(mysqli_num_rows($result) < 1){
 
-$resultado = mysqli_query($con, $sql);
-if ($resultado){
-    echo "logado com sucesso.";
-    header("location:../plaginaposlogin.php?status=ok");
- 
+        unset($_SESSION['email']);
+        unset ($_SESSION['senha']);
+
+        header('location:../login.php');
+    }else{
+
+
+        header('location:../login.php');
+    }
 }else{
-    echo "erro para conectar" .mysqli_connect_error();
+    $_SESSION['email'] = $email;
+        $_SESSION['senha'] = $senha;
+        header("location:../plaginaposlogin.php?status=ok");
 }
-$con->close();
+
+
+
 
 ?>

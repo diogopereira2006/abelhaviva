@@ -1,5 +1,27 @@
+<?php
+session_start();
+if(isset($_GET['status'])){
+    $status = $_GET['status'];
+    if ($status == "ok"){
+        echo "<p 
+        style='
+         background-color:#9AE19D;
+         color:white; 
+         text-align:center;
+         padding:10px; 
+         font-weight:500;
+         margin-left:-20%;
+          '>Registro cadastrado com Sucesso...!!!</p>";
+    }
+}
+?>
+
+
+
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-be">
 <head>
 <title>Página perfil</title>
 <link rel="stylesheet" type="text/css" href="styles/plaginaposlogin.css">
