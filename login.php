@@ -24,7 +24,10 @@
                          text-align:center;
                          padding:10px; 
                          font-weight:500;
-                          '>Registro cadastrado com Sucesso...!!!</p>";
+                         margin-top:-34%;
+                         margin-right:-23%;
+                         float:right;
+                          '>Cadastrado com Sucesso,faça seu login !</p>";
                     }
                 }
             ?>

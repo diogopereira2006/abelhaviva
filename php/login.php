@@ -6,7 +6,7 @@ if(isset($_POST['enviar']) && !empty($_POST['email']) && !empty($_POST['senha'])
     $email = $_POST['email'];
     $senha= $_POST['senha'];
 
-    $sql = "SELECT * FROM inicio_login WHERE email_institu = '$email' and senha = 'senha'";
+    $sql = "SELECT * FROM inicio_login WHERE email_institu = '$email' and senha = '$senha'";
 
     $result = $con->query($sql);
 
@@ -18,13 +18,14 @@ if(isset($_POST['enviar']) && !empty($_POST['email']) && !empty($_POST['senha'])
         unset ($_SESSION['senha']);
 
         header('location:../login.php');
+        echo "Senha ou Email incorretos";
     }else{
 
 
         header('location:../login.php');
     }
 }else{
-    $_SESSION['email'] = $email;
+       $_SESSION['email_institu'] = $email;
         $_SESSION['senha'] = $senha;
         header("location:../plaginaposlogin.php?status=ok");
 }

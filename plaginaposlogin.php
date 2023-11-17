@@ -10,8 +10,11 @@ if(isset($_GET['status'])){
          text-align:center;
          padding:10px; 
          font-weight:500;
-         margin-left:-20%;
-          '>Registro cadastrado com Sucesso...!!!</p>";
+         display:flex;
+         float:right;
+         margin-right:-15%;
+         margin-top:-30%;
+          '>Bem vindo!!!</p>";
     }
 }
 ?>
