@@ -1,9 +1,8 @@
 body {
     font-family: 'Arial', sans-serif;
     background: #aaddff;
-    margin: 0;
+    margin-left: 20%;
     padding: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -14,8 +13,9 @@ body {
     max-width: 800px; /* Ajuste a largura máxima conforme necessário */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    
     text-align: center;
+
 }
 
 .solucao {
@@ -54,12 +54,21 @@ h1 {
 }
 
 @media (max-width: 768px) {
+
     .container {
         padding: 0 20px;
     }
 
-    .solucao, h1 {
-        flex-basis: 100%; /* Em telas menores, também ocupa 100% da largura */
+    .body{
+        margin: auto;
+
     }
-}
+
+    .solucao{
+        flex-basis: calc(100% - 70px);
+    }
+
+
+    }
+
 
