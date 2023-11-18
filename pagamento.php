@@ -20,9 +20,9 @@
                 </label>
                 <div class="dados-boleto">
                     <h2 style="font-size: 15px;">Dados do Boleto</h2>
-                    <input type="text" id="nomes" name="nomes"  placeholder="Nome Completo" required>
-                    <input type="text" id="cpfboleto" name="cpfboleto" placeholder="CPF" required>
-                    <input type="text" id="enderecoboleto" name="enderecoboleto" placeholder="Endereço" required>
+                    <input type="text" id="nomes" name="nomes"  placeholder="Nome Completo" >
+                    <input type="text" id="cpfboleto" name="cpfboleto" placeholder="CPF" >
+                    <input type="text" id="enderecoboleto" name="enderecoboleto" placeholder="Endereço">
                     <input type="text" value="6X R$ 1299,99" disabled>
                 </div>
             </div>
@@ -31,16 +31,16 @@
                 <img class="imagem-cartao" src="img/marcelão.png" alt="Cartão de Crédito">
                 <h2>Cartão de Crédito</h2>
                 <label>
-                    <input type="radio" name="opcao-pagamento" value="cartao">
+                    <input type="radio" id="opcaopagamento" name="opcaopagamento" value="cartao">
                     Pagar com Cartão de Crédito
                 </label>
                 <div class="dados-cartao">
                     <h2 style="font-size: 15px;">Dados do Cartão</h2>
-                    <input type="text" id="numero-cartao" placeholder="Número do Cartão">
-                    <input type="text" id="validade-cartao" placeholder="Validade (MM/AA)">
-                    <input type="text" id="cvv-cartao" placeholder="CVV">
-                    <input type="text" id="nome-titular" placeholder="Nome do Titular">
-                    <input type="text" id="valor-cartao" value="6X R$ 1299,99" disabled>
+                    <input type="text" id="numerocartao" name="nuemro cartao"  placeholder="Número do Cartão">
+                    <input type="text" id="validadecartao" name="validadecartao"  placeholder="Validade (MM/AA)">
+                    <input type="text" id="cvvcartao" name="cvvcartao"  placeholder="CVV">
+                    <input type="text" id="nometitular" name="nometitular"  placeholder="Nome do Titular">
+                    <input type="text" value="6X R$ 1299,99" disabled>
                 </div>
             </div>
         </div>
@@ -61,8 +61,8 @@
             <input type="text" id="numerocartao" name="numerocartao" placeholder="Número do Cartão">
             <input type="text" id="validadecartao" name="validadecartao"placeholder="Validade (MM/AA)">
             <input type="text" id="cvvcartao" name="cvvcartao" placeholder="CVV">
-            <input type="text" id="nometitular" name="nometitular"  placeholder="Nome do Titular">
-            <input type="text" id="valorcartao"name="valorcartao" value="R$ 100,00" disabled>
+            <input type="text" id="nometitular" name="nometitular"  placeholder="Nome do Titular" >
+            <input type="text"  value="R$ 100,00" disabled>
         </div>
         <button type="submit" id="enviar" name="enviar">Realizar Pagamento</button>
     </div>

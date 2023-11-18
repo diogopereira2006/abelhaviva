@@ -1,13 +1,12 @@
 <?php
-
+ session_start();
 if(isset($_POST['enviar']) && !empty($_POST['email']) && !empty($_POST['senha']))
 {
     include_once "conexao.php";
     $email = $_POST['email'];
     $senha= $_POST['senha'];
 
-    $sql = "SELECT * FROM inicio_login WHERE email_institu = '$email' and senha = '$senha'";
-
+    $sql = "INSERT INTO pos_login (email, senha) VALUES ('$email', '$senha')";
     $result = $con->query($sql);
 
 

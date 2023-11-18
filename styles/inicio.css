@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-=======
+}
 header {
   margin-left: -6%;
   width: 100%;
@@ -174,7 +174,6 @@ img.porcentagem {
 html {
 
   font-size: 62.5%;
->>>>>>> 2aa8da1d2158bff699836d2b775a13b52a6d9c42
 }
 
 body {
@@ -243,170 +242,8 @@ header {
 .contato-cards {
   display: flex;
   justify-content: space-around;
-<<<<<<< HEAD
-  align-items: center;
-  margin: 50px 20px; /* Reduzi a margem para melhor ajuste em telas menores */
-  flex-wrap: wrap;
-}
-
-.contato-card {
-  flex-basis: 30%; /* Ajustei a largura para ocupar 100% */
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.contato-card img {
-  width: 50px;
-  height: 50px;
-}
-
-.contato-card h2 {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.contato-card p {
-  font-size: 14px;
-  color: #555;
-}
-
-.menu a {
-  font-size: 14px; /* Reduzi o tamanho do texto do menu */
-}
-
-.sobre {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 50px 20px; /* Reduzi a margem para melhor ajuste em telas menores */
-  flex-wrap: wrap;
-}
-
-.sobre img {
-  width: 100%;
-  max-width: 100%; /* Ajustei o tamanho da imagem para ocupar a largura total */
-  margin-bottom: 20px; /* Adicionei margem inferior para separar dos outros elementos */
-}
-
-.texto-sobre {
-  width: 100%;
-}
-
-/* Adicione ao arquivo apresentacao.css */
-
-.apresentacao-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 50px 20px; /* Reduzi a margem para melhor ajuste em telas menores */
-  flex-wrap: wrap;
-}
-
-.apresentacao-imagem img {
-  max-width: 100%; /* Ajustei o tamanho da imagem para ocupar a largura total */
-  border-radius: 8px;
-}
-
-.apresentacao-texto {
-  max-width: 100%;
-  text-align: left;
-  margin-left: 0; /* Removi a margem à esquerda */
-}
-
-.apresentacao-texto h1 {
-  font-size: 20px; /* Reduzi o tamanho do título */
-}
-
-.apresentacao-texto p {
-  font-size: 14px; /* Reduzi o tamanho do texto */
-}
-
-.apresentacao-texto a {
-  padding: 8px 16px; /* Reduzi o padding do link */
-  font-size: 12px; /* Reduzi o tamanho do texto do link */
-}
-
-#burguer {
-  font-size: 8vw; /* Ajuste o tamanho do ícone para telas menores */
-  margin-right: 8vw; /* Ajuste a margem direita para telas menores */
-}
-
-
-
-
-
-.menu a {
-  text-decoration: none;
-  color: #333;
-  margin-right: 20px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.sobre {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 50px 0;
-  flex-wrap: wrap;
-}
-
-.sobre img {
-  width: 40%;
-  max-width: 200px;
-  margin-bottom: 20px;
-}
-
-.texto-sobre {
-  width: 50%;
-  text-align: center;
-}
-
-.texto-sobre h1 {
-  font-size: 36px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.texto-sobre h2 {
-  font-size: 24px;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.texto-sobre p {
-  font-size: 18px;
-  color: #777;
-}
-
-.clientess {
-  text-align: center;
-  margin: 50px 0;
-}
-
-.clientes img {
-  margin: 10px;
-  max-width: 80px; /* Reduzi ainda mais o tamanho da imagem */
-  height: auto;
-}
-
-.container {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 50px 0;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-=======
   margin-left: -5px;
   background: #335577;
->>>>>>> 2aa8da1d2158bff699836d2b775a13b52a6d9c42
 }
 
 .grid__item,
@@ -505,10 +342,10 @@ footer h3 {
       max-width: none;
   }
 
-<<<<<<< HEAD
+
   .texto-sobre {
       width: 100%;
-=======
+  }
   .btndropdown {
     margin-left: -10px;
   }
@@ -624,7 +461,6 @@ footer h3 {
 
   .continue-button {
     margin-left: -10rem;
->>>>>>> 2aa8da1d2158bff699836d2b775a13b52a6d9c42
   }
 
   .container {
@@ -704,11 +540,9 @@ button:hover {
 
 /* Adicione ao arquivo agendar.css */
 
-.nossos {
-<<<<<<< HEAD
+.nossos{
   font-size: 36px;
   color: #333;
-=======
   font-size: 45px;
   margin-left: 40%;
 }
@@ -871,7 +705,6 @@ section>.clientes {
   font-size: 2rem;
   font-weight: 10px;
   color: #fff;
->>>>>>> 2aa8da1d2158bff699836d2b775a13b52a6d9c42
   text-align: center;
   margin-bottom: 30px;
   font-weight: bold;
