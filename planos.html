@@ -29,7 +29,7 @@
 						6X de 1299,99
 
 					</p>
-					<a class="card-btn" href="pagamento.html">
+					<a class="card-btn" href="pagamento.php">
 						GARANTIR PLANO
 
 					</a>
@@ -53,7 +53,7 @@
 						6X de 3099,99
 
 					</p>
-					<a class="card-btn" href="pagamento2.html">
+					<a class="card-btn" href="pagamento3.html">
 						GARANTIR PLANO 
 
 					</a>
@@ -77,7 +77,7 @@
 						12X de 3599,99
 
 					</p>
-					<a class="card-btn" href="pagamento3.html">
+					<a class="card-btn" href="pagamento2.html">
 						GARANTIR PLANO 
 
 					</a>
