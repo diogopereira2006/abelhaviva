@@ -6,7 +6,7 @@ if(isset($_POST['enviar']) && !empty($_POST['email']) && !empty($_POST['senha'])
     $email = $_POST['email'];
     $senha= $_POST['senha'];
 
-    $sql = "INSERT INTO pos_login (email, senha) VALUES ('$email', '$senha')";
+    $sql = "SELECT * FROM inicio_login WHERE email_institu = '$email' and senha = '$senha'";
     $result = $con->query($sql);
 
 
