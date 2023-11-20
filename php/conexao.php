@@ -1,10 +1,8 @@
 <?php
     $servidor = "localhost";
     $usuario = "root";
-    //xampp nao usa senha
     $senha = "Diogo543210";
-    $base = "empresa_login";
-
+    $base = "login_inicio";
     try{
     $con = mysqli_connect($servidor, $usuario, $senha, $base);
     
