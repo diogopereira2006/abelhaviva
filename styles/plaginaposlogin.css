@@ -136,3 +136,25 @@ body{
         text-decoration: none;
         text-decoration-line: none;
     }
+
+
+    @media (max-width: 600px) {
+        .card {
+            width: 100%; /* Ocupar 100% da largura da tela em dispositivos móveis */
+            border-radius: 0; /* Remover borda arredondada em telas menores */
+        }
+    
+        .imgBx {
+            width: 70%; /* Ajustar a largura da imagem em dispositivos móveis */
+        }
+    
+        .card .content .details {
+            padding: 20px; /* Reduzir o padding em dispositivos móveis */
+        }
+    
+        .card .content .details .data {
+            flex-direction: column; /* Alinhar dados verticalmente em telas menores */
+            align-items: center;
+        }
+    }
+    

@@ -127,3 +127,13 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+@media (max-width: 600px) {
+    .calendario {
+        width: 100%; /* Ocupar 100% da largura da tela em dispositivos móveis */
+    }
+
+    .dias div {
+        width: 100%; /* Ocupar 100% da largura em dispositivos móveis */
+    }
+}

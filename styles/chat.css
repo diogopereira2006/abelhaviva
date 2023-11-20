@@ -262,4 +262,38 @@ body {
     .botao:hover {
         background-color: #a1a1a18c;
     }
+
+    @media (max-width: 600px) {
+        .chat {
+            border-radius: 0; /* Remover borda arredondada em telas menores */
+        }
+    
+        .usuarios,
+        .conversa {
+            width: 100%; /* Ocupar 100% da largura da tela em dispositivos móveis */
+            border-radius: 0; /* Remover borda arredondada em telas menores */
+        }
+    
+        .busca-usuario input[type="text"],
+        .entrada input[type="text"],
+        .telefone input[type="tel"] {
+            width: calc(100% - 20px); /* Ocupar 100% da largura, considerando o padding */
+        }
+    
+        .busca-usuario button,
+        .entrada button,
+        .telefone button {
+            width: 100%; /* Ocupar 100% da largura em dispositivos móveis */
+        }
+    
+        .mensagem {
+            max-width: 100%; /* Ocupar 100% da largura em dispositivos móveis */
+        }
+        
+        .mensagem.bot#agendarEvento,
+        .mensagem.bot#verificarEventos {
+            padding: 8px 10px; /* Ajuste do padding */
+            font-size: 12px; /* Ajuste do tamanho da fonte */
+        }
+    }
     

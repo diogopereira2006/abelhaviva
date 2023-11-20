@@ -120,3 +120,11 @@ html{
 
 }
 
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr; /* Uma coluna em dispositivos móveis */
+        margin-top: 5rem; /* Ajuste da margem superior */
+        margin-bottom: 5rem; /* Ajuste da margem inferior */
+    }
+}
+
