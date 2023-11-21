@@ -17,19 +17,26 @@ if(isset($_GET['status'])){
           '>Bem vindo!!!</p>";
     }
 }
+
 ?>
 
-
-
-
-
 <!DOCTYPE html>
-<html lang="pt-be">
+<html lang="pt-br">
 <head>
 <title>Página perfil</title>
 <link rel="stylesheet" type="text/css" href="styles/plaginaposlogin.css">
 </head>
+<style>
+    .welcomeUser{
+        position: absolute;
+        top: 10%;
+        left: 35%;
+    }
+</style>
 <body>
+
+  
+
     <div class="card">
         <div class="imgBx">
             <img src="img/nestle_blue.png">
@@ -49,6 +56,10 @@ if(isset($_GET['status'])){
             </div>
         </div>
 
-        <script src="javascript/plaginaposlogin.js"></script>
+        <script>
+        function irParaOutraPagina() {
+            window.location.href = 'seuplano.html'; 
+        }
+        </script>
 </body>
 </html>
