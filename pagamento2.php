@@ -45,7 +45,7 @@
             </div>
             
         </div>
-<button type="submit" id="enviar" name="enviar" class="botao-pagamento">Pagar</button>
+     <button id="enviar" name="enviar" class="botao-pagamento">Pagar</button>
     </div>
     
 </form>

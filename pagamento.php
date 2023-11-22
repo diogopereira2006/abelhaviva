@@ -42,7 +42,7 @@
                 </label>
                 <div class="dados-cartao">
                     <h2 style="font-size: 15px;">Dados do Cartão</h2>
-                    <input type="text" id="numerocartao" name="nuemro cartao"  placeholder="Número do Cartão">
+                    <input type="text" id="numerocartao" name="numerocartao"  placeholder="Número do Cartão">
                     <input type="text" id="validadecartao" name="validadecartao"  placeholder="Validade (MM/AA)">
                     <input type="text" id="cvvcartao" name="cvvcartao"  placeholder="CVV">
                     <input type="text" id="nometitular" name="nometitular"  placeholder="Nome do Titular">
@@ -51,28 +51,14 @@
             </div>
         </div>
 
-        <button class="botao-pagamento">Pagar</button>
-    </div>
-    <script src="checkout.js"></script>
-    <div class="checkout">
-    <div class="opcao" id="opcaocartao" name="opcaocartao">
-        <h2>Pagar com Cartão de Crédito</h2>
-        <label>
-            <img src="cartao.png" alt="Cartão de Crédito" class="imagem-cartao">
-            <input type="radio" id="opcaopagamento"name="opcaopagamento" value="cartao" checked>
-            Pagar com Cartão de Crédito
-        </label>
-        <div class="dados-cartao">
-            <h2>Dados do Cartão</h2>
-            <input type="text" id="numerocartao" name="numerocartao" placeholder="Número do Cartão">
-            <input type="text" id="validadecartao" name="validadecartao"placeholder="Validade (MM/AA)">
-            <input type="text" id="cvvcartao" name="cvvcartao" placeholder="CVV">
-            <input type="text" id="nometitular" name="nometitular"  placeholder="Nome do Titular" >
-            <input type="text"  value="R$ 100,00" disabled>
-        </div>
-        <button type="submit" id="enviar" name="enviar">Realizar Pagamento</button>
-    </div>
-</div>
+       
+    </div> 
+    <style>
+       
+
+    </style>
+    <button  id="enviar" name="enviar"  class="botao-pagamento">Realizar pagamento</button>
+   
 </form>
     <script src="javascript/checkout.js"></script>
 

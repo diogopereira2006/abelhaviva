@@ -18,8 +18,9 @@ $sql = "INSERT INTO pagamentos (opcao, nome_completo, nome_titular,numero_cartao
 
 $resultado = mysqli_query($con, $sql);
 if ($resultado) {
-    echo "<script>alert('pago com sucesso !');
-    window.location.href = '../inicio.html'</script>";
+    echo "<script>alert('pagamento realizado com sucesso !');
+         alert('Obrigado por ce juntar a beealive.');
+        window.location.href = '../inicio.html'</script>";
 }else{
     echo "Erro em cadastrar!". mysqli_connect_error();
 }

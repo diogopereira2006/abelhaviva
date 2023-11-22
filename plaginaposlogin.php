@@ -1,23 +1,15 @@
 <?php
 session_start();
+if(isset($_POST['enviar']) && !empty($_POST['email']))
+{
+    $email = $_POST['email'];
 
-if(isset($_GET['status'])){
-    $status = $_GET['status'];
-    if ($status == "ok"){
-        echo "<p 
-        style='
-         background-color:#9AE19D;
-         color:white; 
-         text-align:center;
-         padding:10px; 
-         font-weight:500;
-         display:flex;
-         float:right;
-         margin-right:-15%;
-         margin-top:-30%;
-          '>Bem vindo!!!</p>";
-    }
+    $sql = "SELECT * FROM inicio_login WHERE email_institu = '$email'";
+ 
+
+echo"bem vindo <h1>$email</h1>";
 }
+
 
 
 ?>
@@ -37,7 +29,13 @@ if(isset($_GET['status'])){
         </div>
         <div class="content">
             <div class="details">
-                <h2>Nestlé <br><span>Perfil Empresa</span></h2>
+                <h2>Nestlé <br><span>Perfil Empresa
+                    <?php
+                    echo "bem vindo <h1><u>$email</u></h1>"
+                     
+
+                    ?>
+                </span></h2>
                 <div class="data">
                     <a href="agenda.html">Sua Agenda</h3>
                     <a href="chat.html">Chat</h3>

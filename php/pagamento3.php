@@ -18,8 +18,9 @@ if(isset($_POST['enviar'])){
 
 $resultado = mysqli_query($con, $sql);
 if ($resultado) {
-    header('location:../cadastro.php');
-    echo "pagado com sucesso!, obrigado por ce juntar a beealive.";
+    echo "<script>alert('pagamento realizado com sucesso !');
+     alert('Obrigado por ce juntar a beealive');
+    window.location.href = '../inicio.html'</script>";
 }else{
     echo "Erro em cadastrar!". mysqli_connect_error();
 }
