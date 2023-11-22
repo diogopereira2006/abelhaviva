@@ -1,3 +1,8 @@
+
+ 
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,6 +12,7 @@
     <link rel="stylesheet" href="styles/checkout.css">
 </head>
 <body>
+
     <form action="php/pagamento.php" method="post">
     <div class="checkout">
         <h1>Escolha a forma de pagamento</h1>

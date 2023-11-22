@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 if(isset($_GET['status'])){
     $status = $_GET['status'];
     if ($status == "ok"){
@@ -18,6 +19,7 @@ if(isset($_GET['status'])){
     }
 }
 
+
 ?>
 
 <!DOCTYPE html>
@@ -26,16 +28,8 @@ if(isset($_GET['status'])){
 <title>Página perfil</title>
 <link rel="stylesheet" type="text/css" href="styles/plaginaposlogin.css">
 </head>
-<style>
-    .welcomeUser{
-        position: absolute;
-        top: 10%;
-        left: 35%;
-    }
-</style>
-<body>
 
-  
+<body>
 
     <div class="card">
         <div class="imgBx">

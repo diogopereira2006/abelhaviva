@@ -15,11 +15,14 @@ if(isset($_POST['enviar']) && !empty($_POST['email']) && !empty($_POST['senha'])
 
         unset($_SESSION['email']);
         unset ($_SESSION['senha']);
-
-        echo "Senha ou Email incorretos";
+        header("location:../login.php");
+        echo "Senha ou Email inccorretos";
+        
     }else{
         header("location:../plaginaposlogin.php");
+        $_SESSION['email'];
     }
+    $logado = $_SESSION['email'];
     
 }
 
