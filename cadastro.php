@@ -34,6 +34,12 @@
             <label for="email">Email Institucional</label>
             <input type="text"   name="email" id="email" required>
 
+            <label for="nome">Nome</label>
+            <input type="text"   name="nome" id="nome" required>
+
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text"   name="sobrenome" id="sobrenome" required>
+
             <label for="senha">Senha</label>
             <input type="password"  name="senha" id="senha" required>
 

@@ -30,6 +30,8 @@ if(isset($_GET['status'])){
 <link rel="stylesheet" type="text/css" href="styles/plaginaposlogin.css">
 </head>
 <body>
+
+
     <div class="card">
         <div class="imgBx">
             <img src="http://placecage.com/100/100" alt="Imagem de perfil" id="profileImage">

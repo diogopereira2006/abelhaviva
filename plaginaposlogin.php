@@ -19,9 +19,12 @@ echo"bem vindo <h1>$email</h1>";
 <head>
 <title>Página perfil</title>
 <link rel="stylesheet" type="text/css" href="styles/plaginaposlogin.css">
+
 </head>
 
 <body>
+
+    
 
     <div class="card">
         <div class="imgBx">
@@ -48,10 +51,20 @@ echo"bem vindo <h1>$email</h1>";
             </div>
         </div>
 
+   
+
         <script>
         function irParaOutraPagina() {
             window.location.href = 'seuplano.html'; 
         }
+        
+        function irParaOutraPagina() {
+                window.location.href = 'seuplano.html';
+            }
+
+            function irParaTelaInicial() {
+                window.location.href = 'inicio.html'; // Substitua pelo destino desejado
+            }
         </script>
 </body>
 </html>
