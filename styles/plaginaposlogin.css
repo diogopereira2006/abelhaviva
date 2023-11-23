@@ -1,142 +1,139 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(45deg, #fbda61, #29ace0);
+    margin: 0;
+    font-family: sans-serif;
 }
 
-.card{
+.card {
     position: relative;
     width: 350px;
     height: 190px;
     background: #fff;
     border-radius: 20px;
-    box-shadow: 0 35px 80px rgba(0, 0, 0, 0, 15);
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
     transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: sans-serif;
 }
 
-.card:hover{
+.card:hover {
     height: 450px;
 }
 
-.imgBx{
-    position: absolute;
-    left: 50%;
-    top: -50px;
-    transform: translateX(-50%);
+.imgBx {
+    position: relative;
     width: 150px;
     height: 150px;
     background: #ffffff;
     border-radius: 20px;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0, 35);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
     overflow: hidden;
-    transition: 0.5s;
-}
-.card:hover .imgBx{
-    width: 250px;
-    height: 250px;
+    cursor: pointer;
 }
 
-.imgBx img{
+.imgBx img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.5s;
 }
-.card .content{
-    position: absolute;
+
+.card:hover .imgBx img {
+    filter: brightness(0.5);
+}
+
+#inputImage {
+    display: none;
+}
+
+.content {
+    display: none;
     width: 100%;
-    height: 100%;
-    display: flex;
     justify-content: center;
-    align-items: flex-end;
-    overflow: hidden;
-}
-.card .content .details{
-    padding: 40px;
+    align-items: center;
+    padding: 20px;
     text-align: center;
-    width: 100%;
+}
+
+.card:hover .content {
+    display: flex;
+}
+
+.details {
     transition: 0.5s;
     transform: translateY(150px);
 }
-.card:hover .content .details{
-    transform: translateY(0px);
 
+.card:hover .details {
+    transform: translateY(0);
 }
-.card .content .details h2{
+
+.details h2 {
     font-size: 1.25em;
     font-weight: 600;
     color: #555;
     line-height: 1.2em;
     text-decoration: none;
+    margin: 0;
 }
-.card .content .details h2 span{
+
+.details h2 span {
     font-size: 0.75em;
     font-weight: 500;
     opacity: 0.5;
 }
-.card .content .details .data{
+
+.data {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
     font-size: 1.2em;
-    text-decoration: none;
-    text-decoration-line: none;
 }
 
-.card .content .details .data a{
+.data a {
     font-size: 1em;
     color: #555;
     line-height: 1.2em;
     font-weight: 600;
     text-decoration: none;
-    text-decoration-line: none;
-
 }
-.card .content .details .actionBtn{
+
+.actionBtn {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    text-decoration: none;
-    text-decoration-line: none;
 }
 
-.card .content .details .actionBtn button {
+.actionBtn button {
     padding: 10px 30px;
     border: none;
     border-radius: 5px;
     outline: none;
-    font-size: 1em ;
+    font-size: 1em;
     font-weight: 500;
     background: #96f5e0;
     color: #000000;
     cursor: pointer;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
-    text-decoration-line: none;
+    font-family: sans-serif;
 }
-.card .content .details .actionBtn button:nth-child(2){
-    border: 1px solid #8a8989 ;
+
+.actionBtn button:nth-child(2) {
+    border: 1px solid #8a8989;
     color: #8a8989;
     background: #fff;
-    text-decoration: none;
-    text-decoration-line: none;
 }
-    .card .content .details .actionBtn button text{
-        text-decoration: none;
-        text-decoration-line: none;
-    }
-
 
     @media (max-width: 600px) {
         .card {

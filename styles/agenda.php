@@ -15,6 +15,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 600px;
+    width: 100%; /* Faz o calendário ocupar 100% da largura */
+    margin: auto; /* Centraliza o calendário na tela */
 }
 
 .header {
@@ -60,20 +62,19 @@ body {
     cursor: pointer;
     transition: background-color 0.3s;
     border-radius: 5px;
-    box-sizing: border-box; /* Adicionando box-sizing para garantir que a largura de cada div inclua o padding */
+    box-sizing: border-box;
 }
 
 .dias-semana, .dias {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Ajustando o alinhamento da última fila */
+    justify-content: space-between;
 }
 
 .hoje {
     background-color: #007bff;
     color: #007bff;
 }
-
 
 .eventoModal {
     display: none;
@@ -128,12 +129,39 @@ button:hover {
     background-color: #0056b3;
 }
 
+.criarEventoForm {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.criarEventoForm span {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.criarEventoForm span:hover {
+    background-color: #0056b3;
+}
+
 @media (max-width: 600px) {
     .calendario {
-        width: 100%; /* Ocupar 100% da largura da tela em dispositivos móveis */
+        width: 100%;
     }
 
     .dias div {
-        width: 100%; /* Ocupar 100% da largura em dispositivos móveis */
+        width: 100%;
+    }
+
+    .criarEventoForm span {
+        width: calc(100% / 7); /* Distribui os números em uma grade de uma semana */
+        margin: 2px; /* Adiciona um pequeno espaçamento entre os números */
     }
 }
+

@@ -32,22 +32,28 @@ if(isset($_GET['status'])){
 <body>
     <div class="card">
         <div class="imgBx">
-            <img src="img/nestle_blue.png">
+            <img src="http://placecage.com/100/100" alt="Imagem de perfil" id="profileImage">
         </div>
+        <input type="file" accept="image/*" id="inputImage" onchange="previewImage(event)">
         <div class="content">
             <div class="details">
-                <h2>Nestlé <br><span>Perfil Empresa</span></h2>
+                <h2>Carla Domênico<br><span>Perfil Coolaborador</span></h2>
                 <div class="data">
-                    <a href="agenda.html">Sua Agenda</h3>
-                    <a href="chat.html">Chat</h3>
+                    
+                    
+<a href="agenda.html">Sua empresa</a>
+                    <a href="chat.html">Info</a>
                 </div>
-                <div class="actionBtn" style="text-decoration: none; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                    <button href="seuplano.html" style="text-decoration: none !important;">Seu Plano</button>
-                    <button href="info.html" style="text-decoration: none !important;">Info</button>
+                <div class="actionBtn">
+                    
+        
+<button href="agenda.php">Agenda da empresa</button>
+                    <button href="chat.html">Chat</button>
                 </div>
-            </div>
             </div>
         </div>
+    </div>
+
 
         <script src="javascript/plaginaposlogin.js"></script>
 </body>

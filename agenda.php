@@ -47,8 +47,8 @@ header("Location:");
         </div>
         <div class="dias" id="dias"></div>
     </div>
- <form action="" method="post">
-        <span onclick="fecharModal()" class="fechar">Abrir</span>
+ <form action="" method="post" class="criarEventoForm">
+        <span onclick="fecharModal()" class="fechar">Criar Evento</span>
     <div class="eventoModal" id="eventoModal">
         <h3>Adicionar Evento</h3>
         <input type="date" nome="dataEvento" id="dataEvento" required>
