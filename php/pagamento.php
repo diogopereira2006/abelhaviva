@@ -2,6 +2,7 @@
 session_start();
 require_once "conexao.php";
 
+
 if(isset($_POST['enviar'])){
     $opcaopagamento = $_POST ["opcaopagamento"];
     $nomes = $_POST ["nomes"];
@@ -17,12 +18,14 @@ $sql = "INSERT INTO pagamentos (opcao, nome_completo, nome_titular,numero_cartao
 
 $resultado = mysqli_query($con, $sql);
 if ($resultado) {
-    header('location:../cadastro.php');
-    echo "pagado com sucesso!, obrigado por ce juntar a beealive.";
+    echo "<script>alert('pagamento realizado com sucesso !');
+         alert('Obrigado por ce juntar a beealive.');
+        window.location.href = '../inicio.html'</script>";
 }else{
     echo "Erro em cadastrar!". mysqli_connect_error();
 }
 $con->close();
+
 
 }
 ?>

@@ -45,9 +45,9 @@
             </div>
             
         </div>
-
+     <button id="enviar" name="enviar" class="botao-pagamento">Pagar</button>
     </div>
-    <button type="submit" id="enviar" name="enviar" class="botao-pagamento">Pagar</button>
+    
 </form>
     <script src="checkout.js"></script>
 </body>

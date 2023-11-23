@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function irParaOutraPagina() {
     window.location.href = 'seuplano.html'; // Substitua pelo destino desejado}
 }
@@ -43,3 +44,5 @@ function irParaOutraPagina() {
         var content = document.querySelector('.content');
         content.classList.toggle('active');
     }
+=======
+>>>>>>> 4284d92f55f527c4bfaea9130b3b8272fc3f1a99

@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(45deg, #fbda61, #29ace0);
+    background: linear-gradient(45deg, #fbda61, #29ace0)no-repeat;
 }
 
 .checkout {
@@ -109,8 +109,10 @@ h1 {
     padding: 15px 30px;
     font-size: 24px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
+    transition: 0.3s ease;
+    position: fixed;
+    margin-right: 10%;
+
 }
 
 .botao-pagamento:hover {
