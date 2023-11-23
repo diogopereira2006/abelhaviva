@@ -1,27 +1,3 @@
-<?php
-session_start();
-if(isset($_GET['status'])){
-    $status = $_GET['status'];
-    if ($status == "ok"){
-        echo "<p 
-        style='
-         background-color:#9AE19D;
-         color:white; 
-         text-align:center;
-         padding:10px; 
-         font-weight:500;
-         display:flex;
-         float:right;
-         margin-right:-15%;
-         margin-top:-30%;
-          '>Bem vindo!</p>";
-    }
-}
-?>
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="pt-be">
