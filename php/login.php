@@ -8,6 +8,7 @@ if(isset($_POST['enviar']) && !empty($_POST['email']) && !empty($_POST['senha'])
     $email = $_POST['email'];
     $senha= $_POST['senha'];
 
+
     $sql = "SELECT * FROM inicio_login WHERE email_institu = '$email' and senha = '$senha'";
     $result = $con->query($sql);
 
@@ -19,6 +20,8 @@ if(isset($_POST['enviar']) && !empty($_POST['email']) && !empty($_POST['senha'])
         window.location.href = '../login.php'</script>";
         
     }else{
+        $_SESSION['email'] = $email;
+        $_SESSION['status']='OK';
         header("location:../plaginaposlogin.php");
        
     }

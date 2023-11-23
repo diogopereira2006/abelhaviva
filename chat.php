@@ -1,5 +1,21 @@
+<?php
+session_start();
+
+$email = $_SESSION['email'];{
+
+    $sql = "SELECT * FROM inicio_login WHERE email_institu = '$email'";
+
+
+}
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +44,7 @@
                 </div>
                 <div class="conversa">
                     <div class="mensagens" id="mensagens">
-                        <div class="mensagem bot">Olá! Eu sou seu Assistente Bee Alive. Como posso te ajudar hoje?</div>
+                        <div class="mensagem bot">Olá! <?=$email?> Eu sou seu Assistente Bee Alive. Como posso te ajudar hoje?</div>
                     </div>
                     <div class="entrada">
                         <input type="text" id="mensagemInput" placeholder="Digite sua mensagem...">

@@ -1,3 +1,41 @@
+<?php
+session_start();
+$email = $_SESSION['email'];{
+    
+}
+if(isset($status)){
+    
+    if ($status == "OK"){
+        echo "<p 
+        style='
+         background-color:#9AE19D;
+         color:white; 
+         text-align:center;
+         padding:10px; 
+         font-weight:500;
+         display:flex;
+         float:right;
+         margin-right:-15%;
+         margin-top:-30%;
+          '>Bem vindo!</p>";
+
+    $email = $_SESSION['email'];
+
+    $sql = "SELECT * FROM inicio_login WHERE email_institu = '$email'";
+ 
+
+echo "bem vindo <h1>$email</h1>";
+}
+}
+
+
+?>
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

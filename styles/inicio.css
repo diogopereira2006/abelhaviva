@@ -34,7 +34,7 @@ header {
 }
 
 #burguer {
-  font-size: 20px; /* Usei uma unidade de viewport para tornar o tamanho responsivo */
+  font-size: 5px; /* Usei uma unidade de viewport para tornar o tamanho responsivo */
   color: #fff;
   cursor: pointer;
   margin-right: 4vw; /* Usei a mesma unidade de viewport para a margem direita */

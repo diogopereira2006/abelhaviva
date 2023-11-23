@@ -1,24 +1,10 @@
 <?php
-//$eventos = [];
- 
-//if ($_SERVER["REQUEST_METHOD"] == "GET") {
-   // $data = $_GET["data"];
-   // $descricao = $_GET["descricao"];
- 
-    //if ($data && $descricao) {
-     //   $eventos[] = [
-         //   "data" => $data,
-           // "descricao" => $descricao
-       // ];
-   // }
-//}
- 
-// Adicione aqui o código para salvar os eventos em um banco de dados ou em um arquivo.
-// Exemplo:
-// $jsonEventos = json_encode($eventos);
-// file_put_contents("eventos.json", $jsonEventos);
- 
-header("Location:");
+session_start();
+
+$email = $_SESSION ['email'];{
+
+    $sql = "SELECT * FROM inicio_login WHERE email_institu = '$email'";
+}
 ?>
 
 <!DOCTYPE html>
@@ -30,6 +16,15 @@ header("Location:");
     <link rel="stylesheet" href="styles/agenda.css">
 </head>
 <body>
+    <style>
+        .email h2{
+            margin-top: -20rem;
+            
+        }
+    </style>
+    <div class="email">
+    <h2><?=$email?></h2>
+</div>
     <div class="calendario">
         <div class="header">
             <button onclick="mudarMes(-1)"> < </button>
@@ -47,13 +42,13 @@ header("Location:");
         </div>
         <div class="dias" id="dias"></div>
     </div>
- <form action="" method="post" class="criarEventoForm">
+ <form action="php/agenda.php" method="post" class="criarEventoForm">
         <span onclick="fecharModal()" class="fechar">Criar Evento</span>
     <div class="eventoModal" id="eventoModal">
         <h3>Adicionar Evento</h3>
-        <input type="date" nome="dataEvento" id="dataEvento" required>
-        <input type="text" nome="descricaoEvento"id="descricaoEvento" placeholder="Descrição do Evento" required>
-        <button onclick="adicionarEvento()" type="submit">Adicionar</button>
+        <input type="date"   id="data"name="data" required>
+        <input type="text" id="evento"name="evento" placeholder="Descrição do Evento" required>
+        <button onclick="adicionarEvento()" type="submit" id="enviar" name="enviar">Adicionar</button>
     </div>
 </form>
 
