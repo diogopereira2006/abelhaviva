@@ -1,23 +1,5 @@
 <?php
 session_start();
-<<<<<<< HEAD
-if(isset($_GET['status'])){
-    $status = $_GET['status'];
-    if ($status == "ok"){
-        echo "<p 
-        style='
-         background-color:#9AE19D;
-         color:white; 
-         text-align:center;
-         padding:10px; 
-         font-weight:500;
-         display:flex;
-         float:right;
-         margin-right:-15%;
-         margin-top:-30%;
-          '>Bem vindo!</p>";
-    }
-=======
 if(isset($_POST['enviar']) && !empty($_POST['email']))
 {
     $email = $_POST['email'];
@@ -26,7 +8,6 @@ if(isset($_POST['enviar']) && !empty($_POST['email']))
  
 
 echo"bem vindo <h1>$email</h1>";
->>>>>>> 4284d92f55f527c4bfaea9130b3b8272fc3f1a99
 }
 
 
