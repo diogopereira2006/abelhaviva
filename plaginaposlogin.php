@@ -20,11 +20,15 @@ if(isset($status)){
           '>Bem vindo!</p>";
 
     $email = $_SESSION['email'];
+if(isset($_POST['enviar']) && !empty($_POST['email']))
+{
+    $email = $_POST['email'];
 
     $sql = "SELECT * FROM inicio_login WHERE email_institu = '$email'";
  
 
 echo "bem vindo <h1>$email</h1>";
+}
 }
 }
 

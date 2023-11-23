@@ -41,8 +41,8 @@ if(isset($_GET['status'])){
                 <div class="data">
                     
                     
-<a href="agenda.html">Sua empresa</a>
-                    <a href="chat.html">Info</a>
+<a href="suaemp.html">Sua empresa</a>
+                    <a href="info.html">Info</a>
                 </div>
                 <div class="actionBtn">
                     
