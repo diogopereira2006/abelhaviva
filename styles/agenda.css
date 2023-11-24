@@ -150,18 +150,38 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Seu CSS existente ... */
+/* Seu CSS existente ... */
+
+/* Seu CSS existente ... */
+
 @media (max-width: 600px) {
-    .calendario {
-        width: 100%;
+    .dias-semana,
+    .dias {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-gap: 2px;
+        text-align: center;
     }
 
+    .dias-semana div,
     .dias div {
         width: 100%;
+        font-size: 14px;
     }
 
     .criarEventoForm span {
-        width: calc(100% / 7); /* Distribui os números em uma grade de uma semana */
-        margin: 2px; /* Adiciona um pequeno espaçamento entre os números */
+        width: 100%;
+        margin: 5px 0;
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .button {
+        width: 100%;
+        align-items: center;
     }
 }
+
+
 
