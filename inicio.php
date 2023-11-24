@@ -1,15 +1,15 @@
 <?php
 session_start();
-require_once 'php/conexao.php';
-$email = $_SESSION['email'];{
+
+$nome = $_SESSION['nome'];
+$sobrenome = $_SESSION['sobrenome'];{
+   
 }
-if(isset($_SESSION['email'])){
-    $sql = "SELECT * FROM inicio_login WHERE nome = '$nome'";
+ $sql="SELECT * FROM inicio_login WHERE nome_colab = '$nome' and sobrenome = '$sobrenome'";
+echo "bem vindo<h1>$nome  $sobrenome</h1>";
 
-}
 
-$email = $_SESSION['email'];
-
+ 
 
 ?>
 
@@ -33,9 +33,7 @@ $email = $_SESSION['email'];
 </head>
 
 <body>
-<?php
-echo"<h1>bemmm <u>$email</u></h1>"
-?>
+
     <header>
           <div> <i  id="burguer"class="material-symbols-outlined" onclick="clickMenu()"> menu </i>
             <div class="imagemm">
@@ -49,7 +47,7 @@ echo"<h1>bemmm <u>$email</u></h1>"
         <a href="profissionais.html">Conheça nossos profissionais</a><br><br>
         <a href="planos.php">Conheça nossos Planos</a><br><br>
         <a href="agenda.php">Agendamento</a><br><br>
-        <a href="chat.html">Chat</a><br><br>
+        <a href="chat.php">Chat</a><br><br>
           
           </div>
         </div>

@@ -9,21 +9,7 @@
 <body>
 
 
-<?php
-                if(isset($_GET['status'])){
-                    $status = $_GET['status'];
-                    if ($status == "ok"){
-                        echo "<p 
-                        style='
-                         background-color:#9AE19D;
-                         color:white; 
-                         text-align:center;
-                         padding:10px; 
-                         font-weight:500;
-                          '>Registro cadastrado com Sucesso...!!!</p>";
-                    }
-                }
-            ?>
+
     <div class="container">
         <form  action="php/cadstro.php" class="cadastro-form" method="post">
             <h1>Cadastre-se</h1>

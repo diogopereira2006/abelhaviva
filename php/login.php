@@ -11,7 +11,14 @@ if(isset($_POST['enviar']) && !empty($_POST['email']) && !empty($_POST['senha'])
 
     $sql = "SELECT * FROM inicio_login WHERE email_institu = '$email' and senha = '$senha'";
     $result = $con->query($sql);
-
+    
+    $resultado = mysqli_fetch_array($result);
+     $nome = $resultado[3];
+    $sobrenome = $resultado[4];
+     // var_dump($resultado);   
+    $_SESSION['nome'] = $nome;
+    $_SESSION['sobrenome'] = $sobrenome;
+    
     if(mysqli_num_rows($result) < 1){
 
         unset($_SESSION['email']);
