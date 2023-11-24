@@ -16,14 +16,10 @@
 
             <label for="empresa">Nome da Empresa Representante</label>
             <input type="text"  id="empresa" name="empresa" required>
-
-<<<<<<< HEAD
             <label for="email">Email</label>
             <input type="text"   name="email" id="email" required>
-=======
             <label for="email">Email Institucional</label>
             <input type="text"  id="email"  name="email"  required>
->>>>>>> ce956ae5d51c80128f9f38689104d83f2eb5efcb
 
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome" required>
