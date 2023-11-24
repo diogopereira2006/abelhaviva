@@ -31,7 +31,7 @@ $sobrenome = $_SESSION['sobrenome'];{
     
         <div class="content">
             <div class="details">
-                <h2><?=$nome?> <?=$sobrenome?><br><span>Perfil Coolaborador</span></h2>
+                <h2><?=$nome?> <?=$sobrenome?><br><span>Perfil Colaborador</span></h2>
                 <div class="data">
                     
                     
@@ -42,7 +42,7 @@ $sobrenome = $_SESSION['sobrenome'];{
                     
         
                     <button href="agenda.php">Agenda da empresa</button>
-                    <button href="chat.php">Chat</button>
+                    <button href="chatcolab.php">Chat</button>
                 </div>
             </div>
         </div>

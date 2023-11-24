@@ -51,7 +51,6 @@ $email = $_SESSION['email'];{
                         <button onclick="enviarMensagem()">Enviar</button>
                     </div>
                     <div class="comandos-bot">
-                        <button class="botao agendar" onclick="agendarEventos()">Agendar Evento</button>
                         <button class="botao verificar" onclick="verificarEventos()">Verificar Eventos</button>
                         <a id="linkAgendarEventos" style="display:none;"></a>
                         <a id="linkVerificarEventos" style="display:none;"></a>                        
