@@ -19,7 +19,7 @@ if(isset($_POST['enviar']) && !empty($_POST['email']) && !empty($_POST['senha'])
         echo "<script>alert('Senha ou Email inccorretos')
         window.location.href = '../login.php'</script>";
         
-    }else{
+    }else{  
         $_SESSION['email'] = $email;
         $_SESSION['status']='OK';
         header("location:../plaginaposlogin.php");

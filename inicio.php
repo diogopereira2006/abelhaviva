@@ -1,3 +1,22 @@
+<?php
+session_start();
+require_once 'php/conexao.php';
+$email = $_SESSION['email'];{
+}
+if(isset($_SESSION['email'])){
+    $sql = "SELECT * FROM inicio_login WHERE nome = '$nome'";
+
+}
+
+$email = $_SESSION['email'];
+
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,43 +33,29 @@
 </head>
 
 <body>
+<?php
+echo"<h1>bemmm <u>$email</u></h1>"
+?>
     <header>
           <div> <i  id="burguer"class="material-symbols-outlined" onclick="clickMenu()"> menu </i>
             <div class="imagemm">
             <img  class="abelha"src="img/BEEALIVE.png" width="100px">
         </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> a3da7556d78e15e8ee8a1f7f58d082b3d0c30c23
+        <hr>
         <div class="cabecalho"  id="menu" onclick="clickLog()" style="display:none;">
-        <a href="login.php">Login</a> <br>
-        <a href="cadastro.php">Cadastre-se</a> <br>
-        <a href="solucoes.html">Nossas Soluções</a> <br>
-        <a href="profissionais.html">Conheça nossos profissionais</a> <br>
-<<<<<<< HEAD
-=======
-
-        <div class="cabecalho"  id="menu" onclick="clickLog()" style="display:none;">  
-         <hr>
-        <a href="login.php">Login</a>
-        <a href="cadastro.php">Cadastre-se</a>
-        <a href="solucoes.html">Nossas Soluções</a>
-        <a href="profissionais.html">Conheça nossos profissionais</a>
-        <a href="planos.php">Conheça nossos Planos</a>
-        <a href="agenda.php">Agendamento</a>
-        <a href="chat.html">Chat</a>
-    
+        <a href="login.php">Login</a> <br><br>
+        <a href="cadastro.php">Cadastre-se</a> <br><br>
+        <a href="solucoes.html">Nossas Soluções</a> <br><br>
+        <a href="profissionais.html">Conheça nossos profissionais</a><br><br>
+        <a href="planos.php">Conheça nossos Planos</a><br><br>
+        <a href="agenda.php">Agendamento</a><br><br>
+        <a href="chat.html">Chat</a><br><br>
           
-            </button>
-    
-         </nav>
->>>>>>> a3da7556d78e15e8ee8a1f7f58d082b3d0c30c23
           </div>
         </div>
 
     </header>
-
+    
     <div class="apresentacao-container">
       <div class="apresentacao-imagem">
           <img src="img/img_abelha.png" alt="Imagem de Apresentação">

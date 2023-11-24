@@ -8,11 +8,13 @@
         $empresa = $_POST["empresa"];
         $email = $_POST["email"];
         $senha = $_POST["senha"];
+        $nome = $_POST["nome"];
+        $sobrenome = $_POST["sobrenome"];
 
 
 
 //insere os dados da empresa na tabela
-$sql = "INSERT INTO inicio_login (nomeda_empresa ,email_institu ,senha) VALUES ('$empresa' ,'$email' ,'$senha')";
+$sql = "INSERT INTO inicio_login (nomeda_empresa ,email_institu ,nome,sobrenome,senha) VALUES ('$empresa' ,'$email','$nome','$sobrenome' ,'$senha')";
 
 
 

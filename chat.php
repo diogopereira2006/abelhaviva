@@ -44,7 +44,7 @@ $email = $_SESSION['email'];{
                 </div>
                 <div class="conversa">
                     <div class="mensagens" id="mensagens">
-                        <div class="mensagem bot">Olá! <?=$email?> Eu sou seu Assistente Bee Alive. Como posso te ajudar hoje?</div>
+                        <div class="mensagem bot">Olá! <?=$email?>,eu sou seu Assistente Bee Alive. Como posso te ajudar hoje?</div>
                     </div>
                     <div class="entrada">
                         <input type="text" id="mensagemInput" placeholder="Digite sua mensagem...">
