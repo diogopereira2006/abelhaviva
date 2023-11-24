@@ -7,12 +7,16 @@
     if(isset($_POST['enviar'])){
         $empresa = $_POST["empresa"];
         $email = $_POST["email"];
+        $nome = $_POST["nome"];
+        $sobrenome = $_POST["sobrenome"];
         $senha = $_POST["senha"];
+       
+       
 
 
 
 //insere os dados da empresa na tabela
-$sql = "INSERT INTO inicio_login (nomeda_empresa ,email_institu ,senha) VALUES ('$empresa' ,'$email' ,'$senha')";
+$sql = "INSERT INTO inicio_login (nomeda_empresa ,email_institu ,nome_colab,sobrenome,senha) VALUES ('$empresa' ,'$email','$nome','$sobrenome' ,'$senha')";
 
 
 

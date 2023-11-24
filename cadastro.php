@@ -9,39 +9,30 @@
 <body>
 
 
-<?php
-                if(isset($_GET['status'])){
-                    $status = $_GET['status'];
-                    if ($status == "ok"){
-                        echo "<p 
-                        style='
-                         background-color:#9AE19D;
-                         color:white; 
-                         text-align:center;
-                         padding:10px; 
-                         font-weight:500;
-                          '>Registro cadastrado com Sucesso...!!!</p>";
-                    }
-                }
-            ?>
+
     <div class="container">
         <form  action="php/cadstro.php" class="cadastro-form" method="post">
             <h1>Cadastre-se</h1>
 
             <label for="empresa">Nome da Empresa Representante</label>
-            <input type="text" name="empresa" id="empresa"  required>
+            <input type="text"  id="empresa" name="empresa" required>
 
+<<<<<<< HEAD
             <label for="email">Email</label>
             <input type="text"   name="email" id="email" required>
+=======
+            <label for="email">Email Institucional</label>
+            <input type="text"  id="email"  name="email"  required>
+>>>>>>> ce956ae5d51c80128f9f38689104d83f2eb5efcb
 
             <label for="nome">Nome</label>
-            <input type="text"   name="nome" id="nome" required>
+            <input type="text" id="nome" name="nome" required>
 
             <label for="sobrenome">Sobrenome</label>
-            <input type="text"   name="sobrenome" id="sobrenome" required>
+            <input type="text" id="sobrenome" name="sobrenome" required>
 
             <label for="senha">Senha</label>
-            <input type="password"  name="senha" id="senha" required>
+            <input type="password"  id="senha" name="senha" required>
 
             <label for="senhadois">Confirmar senha</label>
             <input type="password" name="senhadois" id="senhadois"  required>

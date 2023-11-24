@@ -1,33 +1,16 @@
 <?php
 session_start();
-$email = $_SESSION['email'];{
-    
-}
-if(isset($status)){
-    
-    if ($status == "OK"){
-        echo "<p 
-        style='
-         background-color:#9AE19D;
-         color:white; 
-         text-align:center;
-         padding:10px; 
-         font-weight:500;
-         display:flex;
-         float:right;
-         margin-right:-15%;
-         margin-top:-30%;
-          '>Bem vindo!</p>";
 
-    $email = $_SESSION['email'];
 
-    $sql = "SELECT * FROM inicio_login WHERE email_institu = '$email'";
+
+if(isset($_POST['enviar']) && !empty($_POST['email']) && !empty($_POST['senha']))
+$nome = $_SESSION['nome'];{
+	
+	$sql = "SELECT * FROM inicio_login WHERE nome = '$nome'";
  
 
-echo "bem vindo <h1>$email</h1>";
-}
-}
 
+}
 
 ?>
 
@@ -45,8 +28,12 @@ echo "bem vindo <h1>$email</h1>";
     <title>Nossos Planos</title> 
     <link rel="stylesheet" href="styles/planos.css">    
 </head>
-<body>   
+<body>  
+	
 	<div class="grid">
+	<?php
+					echo" bem vindo <h4>$nome</h4>";
+					?>
 		<div class="grid-item">
 			<div class="card">
 				<img src="img/bronze.png" alt="medalha1" class="card-img">
