@@ -23,10 +23,12 @@ $sobrenome = $_SESSION['sobrenome'];{
 
 
     <div class="card">
-        <div class="imgBx">
+        <label for="inputImage" class="imgBx">
             <img src="http://placecage.com/100/100" alt="Imagem de perfil" id="profileImage">
-        </div>
+        </label>
         <input type="file" accept="image/*" id="inputImage" onchange="previewImage(event)">
+
+    
         <div class="content">
             <div class="details">
                 <h2><?=$nome?> <?=$sobrenome?><br><span>Perfil Coolaborador</span></h2>

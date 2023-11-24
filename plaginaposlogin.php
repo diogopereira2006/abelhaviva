@@ -43,6 +43,7 @@ echo "bem vindo <h1>$email</h1>";
         <div class="imgBx">
             <img src="img/nestle_blue.png">
         </div>
+        
         <div class="content">
             <div class="details">
                 <h2>Nestlé <br><span>Perfil Empresa

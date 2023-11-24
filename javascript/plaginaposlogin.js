@@ -3,14 +3,19 @@ function irParaOutraPagina() {
 }
 
 function previewImage(event) {
-    var input = event.target;
-    var profileImage = document.getElementById('profileImage');
-
-    var reader = new FileReader();
-
-    reader.onload = function () {
-        profileImage.src = reader.result;
-    };
+    function previewImage(event) {
+        var input = event.target;
+        var profileImage = document.getElementById('profileImage');
+    
+        var reader = new FileReader();
+    
+        reader.onload = function () {
+            profileImage.src = reader.result;
+        };
+    
+        reader.readAsDataURL(input.files[0]);
+    }
+    
 
     reader.readAsDataURL(input.files[0]);
     showButtons();
