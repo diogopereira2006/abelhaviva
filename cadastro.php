@@ -16,8 +16,7 @@
 
             <label for="empresa">Nome da Empresa Representante</label>
             <input type="text"  id="empresa" name="empresa" required>
-            <label for="email">Email</label>
-            <input type="text"   name="email" id="email" required>
+
             <label for="email">Email Institucional</label>
             <input type="text"  id="email"  name="email"  required>
 

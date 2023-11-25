@@ -1,16 +1,15 @@
 <?php
 session_start();
 
+if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha'])== true)){
 
+	$sql="SELECT * FROM cadastro_empresa WHERE email_institu = '$email' and senha = '$senha'";
 
-if(isset($_POST['enviar']) && !empty($_POST['email']) && !empty($_POST['senha']))
-$nome = $_SESSION['nome'];{
+	header('location:loginempresa.php');
+
 	
-	$sql = "SELECT * FROM inicio_login WHERE nome = '$nome'";
- 
-
-
 }
+$logado = $_SESSION['email'];
 
 ?>
 
@@ -31,9 +30,7 @@ $nome = $_SESSION['nome'];{
 <body>  
 	
 	<div class="grid">
-	<?php
-					echo" bem vindo <h4>$nome</h4>";
-					?>
+
 		<div class="grid-item">
 			<div class="card">
 				<img src="img/bronze.png" alt="medalha1" class="card-img">
