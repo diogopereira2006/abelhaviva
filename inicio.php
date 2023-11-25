@@ -27,10 +27,11 @@ session_start();
 <body>
 
     <header>
-          <div> <i  id="burguer"class="material-symbols-outlined" onclick="clickMenu()"> menu </i>
+        <div> 
+          <i id="burguer"class="material-symbols-outlined" onclick="clickMenu()"> menu </i>
             <div class="imagemm">
             <img  class="abelha"src="img/BEEALIVE.png" width="100px">
-        </div>
+            </div>
         <hr>
         <div class="cabecalho"  id="menu" onclick="clickLog()" style="display:none;">
         <a href="login.php">Login</a> <br> <br>
