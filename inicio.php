@@ -37,7 +37,7 @@ session_start();
         <a href="cadastroemp.php">Cadastre sua empresa</a> <br>
         <a href="cadastro.php">Cadastre seu colaborador</a> <br>
         <a href="solucoes.html">Nossas Soluções</a> <br>
-        <a href="profissionais.html">Conheça nossos profissionais</a> <br>
+        <a href="profissionais.php">Conheça nossos profissionais</a> <br>
           </div>
         </div>
 
