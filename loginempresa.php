@@ -18,7 +18,7 @@
             ?>
     <div class="container">
         <form action="php/loginempresa.php" class="login-form" method="post">
-            <h1>Login</h1>
+            <h1>Login empresa</h1>
             <div class="form-group">
                 <label for="email">E-mail Institucional</label>
                 <input type="text" id="email" name="email" required>

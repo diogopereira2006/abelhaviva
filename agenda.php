@@ -1,9 +1,17 @@
 <?php
 session_start();
 
-$email = $_SESSION ['email'];{
+{
 
-    $sql = "SELECT * FROM inicio_login WHERE email_institu = '$email'";
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha'])== true)){
+
+        $sql="SELECT * FROM inicio_login WHERE email_institu = '$email' and senha = '$senha'";
+    
+        header('location:login.php');
+    
+        
+    }
+    $logado = $_SESSION['email'];
 }
 ?>
 
@@ -16,15 +24,7 @@ $email = $_SESSION ['email'];{
     <link rel="stylesheet" href="styles/agenda.css">
 </head>
 <body>
-    <style>
-        .email h2{
-            margin-top: -20rem;
-            
-        }
-    </style>
-    <div class="email">
-    <h2><?=$email?></h2>
-</div>
+   
     <div class="calendario">
         <div class="header">
             <button onclick="mudarMes(-1)"> < </button>

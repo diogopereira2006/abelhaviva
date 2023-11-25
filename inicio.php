@@ -1,14 +1,6 @@
 <?php
 session_start();
 
-$nome = $_SESSION['nome'];
-$sobrenome = $_SESSION['sobrenome'];{
-   
-}
- $sql="SELECT * FROM inicio_login WHERE nome_colab = '$nome' and sobrenome = '$sobrenome'";
-echo "bem vindo<h1>$nome  $sobrenome</h1>";
-
-
  
 
 ?>
@@ -39,14 +31,6 @@ echo "bem vindo<h1>$nome  $sobrenome</h1>";
             <div class="imagemm">
             <img  class="abelha"src="img/BEEALIVE.png" width="100px">
         </div>
-<<<<<<< HEAD
-        <div class="cabecalho"  id="menu" onclick="clickLog()" style="display:none;">
-        <a href="login.php">Login</a> <br>
-        <a href="cadastroemp.php">Cadastre sua empresa</a> <br>
-        <a href="cadastro.php">Cadastre seu colaborador</a> <br>
-        <a href="solucoes.html">Nossas Soluções</a> <br>
-        <a href="profissionais.html">Conheça nossos profissionais</a> <br>
-=======
         <hr>
         <div class="cabecalho"  id="menu" onclick="clickLog()" style="display:none;">
         <a href="login.php">Login</a> <br> <br>
@@ -54,11 +38,10 @@ echo "bem vindo<h1>$nome  $sobrenome</h1>";
          <a href="cadastroemp.php">Cadastre sua empresa</a> <br> <br>
          <a href="cadastro.php">Cadastre seu colaborador</a> <br> <br>
          <a href="solucoes.html">Nossas Soluções</a> <br> <br>
-        <a href="profissionais.html">Conheça nossos profissionais</a> <br><br>
+        <a href="profissionais.php">Conheça nossos profissionais</a> <br><br>
         <a href="planos.php">Conheça nossos Planos</a><br><br>
         <a href="agenda.php">Agendamento</a><br> <br>
         <a href="chat.php">Chat</a><br>
->>>>>>> c0f2a9c67e0e48802af6470b965cfc5545e7729a
           </div>
         </div>
 

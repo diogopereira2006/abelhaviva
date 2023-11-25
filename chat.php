@@ -6,7 +6,15 @@ $sobrenome = $_SESSION['sobrenome'];{
 
     $sql = "SELECT * FROM inicio_login WHERE nome_colab = '$nome' and sobrenome = '$sobrenome'";
 
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha'])== true)){
 
+        $sql="SELECT * FROM inicio_login WHERE email_institu = '$email' and senha = '$senha'";
+    
+        header('location:login.php');
+    
+        
+    }
+    $logado = $_SESSION['email'];
 }
 
 ?>

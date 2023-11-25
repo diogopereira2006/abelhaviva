@@ -1,3 +1,21 @@
+<?php
+if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha'])== true)){
+
+	$sql="SELECT * FROM inicio_login WHERE email_institu = '$email' and senha = '$senha'";
+
+	header('location:login.php');
+
+	
+}
+$logado = $_SESSION['email'];
+
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
