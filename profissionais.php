@@ -2,7 +2,10 @@
 if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha'])== true)){
 
 	$sql="SELECT * FROM inicio_login WHERE email_institu = '$email' and senha = '$senha'";
+ 
 
+  unset($_SESSION['email']);
+  unset($_SESSION['senha']);
 	header('location:login.php');
 
 	

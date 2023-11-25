@@ -13,8 +13,8 @@ if(isset($_POST['enviar']) && !empty($_POST['email']) && !empty($_POST['senha'])
     $result = $con->query($sql);
     
     $resultado = mysqli_fetch_array($result);
-     $nome = $resultado[4];
-     $sobrenome = $resultado[5];
+     $nome = $resultado[3];
+     $sobrenome = $resultado[4];
      // var_dump($resultado);   
     $_SESSION['nome'] = $nome;
     $_SESSION['sobrenome'] = $sobrenome;
