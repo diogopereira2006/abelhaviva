@@ -14,26 +14,11 @@
 </head>
 <body>
 <?php
-                if(isset($_GET['status'])){
-                    $status = $_GET['status'];
-                    if ($status == "ok"){
-                        echo "<p 
-                        style='
-                         background-color:#9AE19D;
-                         color:white; 
-                         text-align:center;
-                         padding:10px; 
-                         font-weight:500;
-                         margin-top:-34%;
-                         margin-right:-23%;
-                         float:right;
-                          '>Cadastrado com Sucesso,faça seu login !</p>";
-                    }
-                }
+              
             ?>
     <div class="container">
-        <form action="php/login.php" class="login-form" method="post">
-            <h1>Login</h1>
+        <form action="php/loginempresa.php" class="login-form" method="post">
+            <h1>Login empresa</h1>
             <div class="form-group">
                 <label for="email">E-mail Institucional</label>
                 <input type="text" id="email" name="email" required>

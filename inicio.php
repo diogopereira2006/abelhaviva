@@ -1,14 +1,6 @@
 <?php
 session_start();
 
-$nome = $_SESSION['nome'];
-$sobrenome = $_SESSION['sobrenome'];{
-   
-}
- $sql="SELECT * FROM inicio_login WHERE nome_colab = '$nome' and sobrenome = '$sobrenome'";
-echo "bem vindo<h1>$nome  $sobrenome</h1>";
-
-
  
 
 ?>
@@ -35,7 +27,8 @@ echo "bem vindo<h1>$nome  $sobrenome</h1>";
 <body>
 
     <header>
-          <div> <i  id="burguer"class="material-symbols-outlined" onclick="clickMenu()"> menu </i>
+        <div> 
+          <i id="burguer"class="material-symbols-outlined" onclick="clickMenu()"> menu </i>
             <div class="imagemm">
             <img  class="abelha"src="img/BEEALIVE.png" width="100px">
         </div>

@@ -1,11 +1,20 @@
 <?php
 session_start();
 
-$email = $_SESSION['email'];{
+$nome = $_SESSION['nome'];
+$sobrenome = $_SESSION['sobrenome'];{
 
-    $sql = "SELECT * FROM inicio_login WHERE email_institu = '$email'";
+    $sql = "SELECT * FROM inicio_login WHERE nome_colab = '$nome' and sobrenome = '$sobrenome'";
 
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha'])== true)){
 
+        $sql="SELECT * FROM inicio_login WHERE email_institu = '$email' and senha = '$senha'";
+    
+        header('location:login.php');
+    
+        
+    }
+    $logado = $_SESSION['email'];
 }
 
 ?>
@@ -44,7 +53,7 @@ $email = $_SESSION['email'];{
                 </div>
                 <div class="conversa">
                     <div class="mensagens" id="mensagens">
-                        <div class="mensagem bot">Olá! <?=$email?>,eu sou seu Assistente Bee Alive. Como posso te ajudar hoje?</div>
+                        <div class="mensagem bot">Olá! <?=$nome?> <?=$sobrenome?>,eu sou seu Assistente Bee Alive. Como posso te ajudar hoje?</div>
                     </div>
                     <div class="entrada">
                         <input type="text" id="mensagemInput" placeholder="Digite sua mensagem...">

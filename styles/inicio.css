@@ -17,15 +17,11 @@ header {
   align-items: center;
  }
  
- #menu {
-  display: flex;
-  align-items: center; /* Alinhado ao canto superior esquerdo */
-  gap: 10px;
- }
+ 
  
  #menu i {
   font-size: 20px; /* Ajuste para o mesmo tamanho do ícone burger */
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   transform: scale(0.8); /* Reduzido em 20% */
   margin-right: 4vw; /* Usei a mesma unidade de viewport para a margem direita */
@@ -48,22 +44,21 @@ header {
   text-decoration: none;
  }
 
-#burguer {
+i#burguer {
   font-size: 40px; /* Usei uma unidade de viewport para tornar o tamanho responsivo */
   color: #fff;
   cursor: pointer;
   margin-right: 6vw; /* Usei a mesma unidade de viewport para a margem direita */
   width: 30px;
   margin-left: 10px;
+  margin-top: 20%;
 }
 
-.imagemm {
-  margin-left: 72rem;
-}
+
 
 .abelha {
-  width: 10rem;
-  height: auto;
+  
+ 
   image-orientation: calc(10 0);
 }
 

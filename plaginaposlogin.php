@@ -11,7 +11,7 @@ if(isset($_POST['enviar']) && !empty($_POST['email']))
 {
     $email = $_POST['email'];
 
-    $sql = "SELECT * FROM inicio_login WHERE email_institu = '$email'";
+    $sql = "SELECT * FROM cadastro_empresa WHERE email_institu = '$email'";
     // $resultado = mysqli_query($con, $sql);
     // echo "<pre>";
     // var_dump($resultado);
