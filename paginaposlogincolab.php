@@ -42,7 +42,7 @@ $sobrenome = $_SESSION['sobrenome'];{
                     
         
                     <button href="agenda.php">Agenda da empresa</button>
-                    <button href="chatcolab.php">Chat</button>
+                    <button href="chat.php">Chat</button>
                 </div>
             </div>
         </div>
