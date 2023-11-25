@@ -43,7 +43,6 @@
                 <input type="password" id="senha" name="senha" required>
             </div>
             <button type="submit" name="enviar" id="enviar">Entrar</button>
-            <a href="logincolab.php" style="font-size: 10px; color: brown; margin-top: 20px;">Sou colaborador</h2>
         </form>
     </div>
 </body>
