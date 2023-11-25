@@ -13,8 +13,8 @@ if(isset($_POST['enviar']) && !empty($_POST['email']) && !empty($_POST['senha'])
     $result = $con->query($sql);
     
     $resultado = mysqli_fetch_array($result);
-     $nome = $resultado[3];
-    $sobrenome = $resultado[4];
+     $nome = $resultado[4];
+     $sobrenome = $resultado[5];
      // var_dump($resultado);   
     $_SESSION['nome'] = $nome;
     $_SESSION['sobrenome'] = $sobrenome;
@@ -29,7 +29,7 @@ if(isset($_POST['enviar']) && !empty($_POST['email']) && !empty($_POST['senha'])
     }else{  
         $_SESSION['email'] = $email;
         $_SESSION['status']='OK';
-        header("location:../plaginaposlogin.php");
+        header("location:../paginaposlogincolab.php");
        
     }
     
