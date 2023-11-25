@@ -31,18 +31,13 @@ session_start();
           <i id="burguer"class="material-symbols-outlined" onclick="clickMenu()"> menu </i>
             <div class="imagemm">
             <img  class="abelha"src="img/BEEALIVE.png" width="100px">
-            </div>
-        <hr>
+        </div>
         <div class="cabecalho"  id="menu" onclick="clickLog()" style="display:none;">
-        <a href="login.php">Login</a> <br> <br>
-        <a href="cadastro.php">Cadastre-se</a> <br> <br>
-         <a href="cadastroemp.php">Cadastre sua empresa</a> <br> <br>
-         <a href="cadastro.php">Cadastre seu colaborador</a> <br> <br>
-         <a href="solucoes.html">Nossas Soluções</a> <br> <br>
-        <a href="profissionais.php">Conheça nossos profissionais</a> <br><br>
-        <a href="planos.php">Conheça nossos Planos</a><br><br>
-        <a href="agenda.php">Agendamento</a><br> <br>
-        <a href="chat.php">Chat</a><br>
+        <a href="login.php">Login</a> <br>
+        <a href="cadastroemp.php">Cadastre sua empresa</a> <br>
+        <a href="cadastro.php">Cadastre seu colaborador</a> <br>
+        <a href="solucoes.html">Nossas Soluções</a> <br>
+        <a href="profissionais.html">Conheça nossos profissionais</a> <br>
           </div>
         </div>
 
