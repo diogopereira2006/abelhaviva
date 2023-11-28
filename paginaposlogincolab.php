@@ -3,6 +3,8 @@ session_start();
 $nome = $_SESSION['nome'];
 $sobrenome = $_SESSION['sobrenome'];{
     $sql = "SELECT * FROM inicio_login WHERE nome_colab = '$nome' and sobrenome = '$sobrenome'";
+
+    
 }
 
 
