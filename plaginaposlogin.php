@@ -36,22 +36,22 @@ echo "bem vindo <h1>$email</h1>";
 
 <body>
 
-    
+
 
     <div class="card">
+        <label for="inputImage" class="imgBx">
+            <img src="http://placecage.com/100/100" alt="Imagem de perfil" id="profileImage">
+        </label>
+        <input type="file" accept="image/*" id="inputImage" onchange="previewImage(event)">
 
-        <div class="imgBx">
-            <img src="img/nestle_blue.png">
-        </div>
-        
         <div class="content">
             <div class="details">
                 <h2>Nestlé <br><span>Perfil Empresa
                 </span></h2>
                 
                 <div class="data">
-                    <a href="agenda.html">Sua Agenda</h3>
-                    <a href="chat.html">Chat</h3>
+                    <a href="agenda.php">Sua Agenda</h3>
+                    <a href="chat.php">Chat</h3>
                 </div>
                 <div class="actionBtn" style="text-decoration: none; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
                     <button href="seuplano.html" style="text-decoration: none !important;">Seu Plano</button>

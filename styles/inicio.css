@@ -20,46 +20,46 @@ header {
  
  
  #menu i {
-  font-size: 20px; /* Ajuste para o mesmo tamanho do ícone burger */
+  font-size: 20px;
   color: #ffffff;
   cursor: pointer;
-  transform: scale(0.8); /* Reduzido em 20% */
-  margin-right: 4vw; /* Usei a mesma unidade de viewport para a margem direita */
- }
- 
- 
- .cabecalho {
+  transform: scale(0.8);
+  margin-right: 4vw;
+}
+
+.cabecalho {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;
   margin-left: 10px;
   size: 50px;
- }
- 
- .cabecalho a {
+}
+
+.cabecalho a {
   color: #fff;
   margin-bottom: 10px;
   font-size: 15px;
   text-decoration: none;
- }
+}
+
+.menu-icon {
+  margin-left: 10px;
+}
 
 i#burguer {
-  font-size: 40px; /* Usei uma unidade de viewport para tornar o tamanho responsivo */
+  font-size: 40px;
   color: #fff;
   cursor: pointer;
-  margin-right: 6vw; /* Usei a mesma unidade de viewport para a margem direita */
-  width: 30px;
-  margin-left: 10px;
   margin-top: 20%;
 }
 
-
+.imagemm {
+  align-self:self-start;
+}
 
 .abelha {
-  
- 
-  image-orientation: calc(10 0);
+  image-orientation: calc(100 20);
 }
 
 
@@ -391,6 +391,34 @@ background-color: #fff;
     font-size: 8vw; /* Ajuste o tamanho do ícone para telas menores */
     margin-right: 8vw; /* Ajuste a margem direita para telas menores */
   }
+  footer {
+    background-color: #001F3F;
+    padding: 150px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  footer img {
+    width: 70%; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  
+  footer h1 {
+    margin-top: 10px;
+    color: #ccc;
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  footer h3 {
+    font-size: 60px; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-top: 20px;
+    text-align: center;
+  }
+
   
 }
 
@@ -494,7 +522,7 @@ button:hover {
 
 .cliente-card img {
   width: 100%;
-  max-width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
+  max-width: 100%; /* Ajuste o tamanho da imagem conforme necessário */
   height: auto;
   border-radius: 8px;
 }
