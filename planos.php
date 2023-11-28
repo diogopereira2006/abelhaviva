@@ -1,7 +1,9 @@
 <?php
 session_start();
 
-if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha'])== true)){
+$_SESSION['email'];
+
+if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)){
 
 	$sql="SELECT * FROM cadastro_empresa WHERE email_institu = '$email' and senha = '$senha'";
 

@@ -50,12 +50,12 @@ echo "bem vindo <h1>$email</h1>";
                 </span></h2>
                 
                 <div class="data">
-                    <a href="agenda.html">Sua Agenda</h3>
-                    <a href="chat.html">Chat</h3>
+                    <a href="agenda.php"><h3>Sua Agenda</h3></a>
+                    <a href="chat.php"><h3>Chat</h3></a>
                 </div>
                 <div class="actionBtn" style="text-decoration: none; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                    <button href="seuplano.html" style="text-decoration: none !important;">Seu Plano</button>
-                    <button href="info.html" style="text-decoration: none !important;">Info</button>
+                    <a  href="seuplano.html" style="text-decoration: none; "><button>Seu Plano</button></a>
+                    <a href="info.html" style="text-decoration: none;"><button>Info</button></a>
                 </div>
             </div>
             
@@ -82,7 +82,7 @@ echo "bem vindo <h1>$email</h1>";
             }
 
             function irParaTelaInicial() {
-                window.location.href = 'inicio.html'; // Substitua pelo destino desejado
+                window.location.href = 'inicio.php'; // Substitua pelo destino desejado
             }
         </script>
 </body>
