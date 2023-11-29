@@ -1,4 +1,10 @@
 <?php
+
+session_start();
+
+$_SESSION['email'];
+
+
 if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha'])== true)){
 
 	$sql="SELECT * FROM inicio_login WHERE email_institu = '$email' and senha = '$senha'";
@@ -11,6 +17,7 @@ if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha'])== true))
 	
 }
 $logado = $_SESSION['email'];
+
 
 
 ?>

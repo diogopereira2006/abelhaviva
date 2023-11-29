@@ -7,7 +7,7 @@ if($conexao == "local"){
     $servidor = "localhost";
     $usuario = "root";
     $senha = "Diogo543210";
-    $base = "beealive";
+    $base = "login_inicio";
 
 
 }
