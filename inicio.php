@@ -27,24 +27,29 @@ session_start();
 <body>
 
     <header>
-        <div> 
+        <div class="centerr"> 
+        
           <i id="burguer"class="material-symbols-outlined" onclick="clickMenu()"> menu </i>
+        <form action="saircessao.php" method="post">
+        <input type="submit" value="sair" class="sair">
+        </form>
+
+
             <div class="imagemm">
             <img  class="abelha"src="img/BEEALIVE.png" width="100px">
         </div>
+        
+    
         <div class="cabecalho"  id="menu" onclick="clickLog()" style="display:none;">
         <a href="loginempresa.php">Login</a> <br>
         <a href="cadastroemp.php">Cadastre sua empresa</a> <br>
         <a href="cadastro.php">Cadastre seu colaborador</a> <br>
         <a href="solucoes.html">Nossas Soluções</a> <br>
         <a href="profissionais.php">Conheça nossos profissionais</a> <br>
-<<<<<<< HEAD
         <a href="planos.php">Nossos Planos</a> <br>
-=======
-        <a href="planos.php">Conheça nossos planos</a> <br>
->>>>>>> 2c462638f6f131c029b610dde352b75db91bef35
           </div>
         </div>
+        
 
     </header>
     
