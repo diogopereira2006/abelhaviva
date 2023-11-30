@@ -15,7 +15,7 @@ else{
     if($conexao == "online"){
         $servidor = "107.161.183.203";
         $usuario = "terceirods_beealive";
-        $senha = "beealive543210";
+        $senha = "beealive123";
         $base = "terceirods_beealive";
     }
     
