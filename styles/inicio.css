@@ -597,13 +597,22 @@ button:hover {
 
 @media (max-width: 400px){
   .sair{
-    margin-left: 8rem;
+    margin-left: 5rem;
     width: 50%;
   }
-  .imagemm{
-    margin-left: 9%;
-  }
+ 
   i#burguer{
-    height: ;
+    height: 50px ;
+  }
+  .cabecalho{
+    margin-top: 14%;
+    margin-left: -92%;
+  }
+  footer > h3{
+    font-size: 30px;
+    display: flex;
+    background-color: transparent;
+    width: 190%;
+    margin-left: -40%;
   }
 }
