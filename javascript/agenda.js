@@ -173,6 +173,10 @@ function atualizarQuadroEventos() {
         mensagemVazia.textContent = "Seu quadro de eventos está vazio.";
         quadroEventos.appendChild(mensagemVazia);
     }
+    function verificarEventos() {
+        window.location.href = 'quadroeventos.html';
+        console.log("Verificando eventos...");
+    }
 }
 
 // ... (restante do código)

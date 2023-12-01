@@ -15,8 +15,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 600px;
-    width: 100%; /* Faz o calendário ocupar 100% da largura */
-    margin: auto; /* Centraliza o calendário na tela */
+    width: 100%;
+    margin: auto;
 }
 
 .header {
@@ -116,10 +116,6 @@ input[type="text"] {
 
 button {
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -129,60 +125,18 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Seu CSS existente */
+
 .criarEventoForm {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.criarEventoForm span {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.criarEventoForm span:hover {
-    background-color: #0056b3;
-}
-
-/* Adicione este estilo ao seu CSS */
-
-.quadro-eventos {
-    background-color: #f7f7f7;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.evento {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #fff;
     display: flex;
     justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
     align-items: center;
 }
 
-.evento .data {
-    font-weight: bold;
-    color: #007bff;
-}
-
-.evento .descricao {
-    flex-grow: 1;
-    margin-left: 10px;
-}
-
-/* Estilo para o botão de adicionar evento */
-.fechar {
-    display: inline-block;
+.criarEventoForm span,
+.criarEventoForm button {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -191,33 +145,27 @@ button:hover {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-top: 10px;
 }
 
-.fechar:hover {
+.criarEventoForm span:hover,
+.criarEventoForm button:hover {
     background-color: #0056b3;
 }
 
-#quadroEventos {
-    text-align: left;
-    margin-top: 10px; /* Ajuste o valor conforme necessário */
+.verificarEventos {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Adiciona margem ao botão para separá-lo do formulário */
 }
 
-#tituloQuadro {
-    margin-top: 0;
-}
-
-.evento {
-    margin-bottom: 10px;
-}
-
-.data {
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.descricao {
-    /* Adicione estilos conforme necessário */
+.verificarEventos:hover {
+    background-color: #218838;
 }
 
 

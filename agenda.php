@@ -32,7 +32,9 @@ $data = $_SESSION['data'];{
     <link rel="stylesheet" href="styles/agenda.css">
 </head>
 <body>
-   
+
+
+
     <div class="calendario">
         <div class="header">
             <button onclick="mudarMes(-1)"> < </button>
@@ -49,18 +51,20 @@ $data = $_SESSION['data'];{
             <div>Sab</div>
         </div>
         <div class="dias" id="dias"></div>
+        <a href="quadroeventos.html">Verificar Eventos</a>
     </div>
- <form action="php/agenda.php" method="post" class="criarEventoForm">
+
+    <form action="php/agenda.php" method="post" class="criarEventoForm">
         <span onclick="fecharModal()" class="fechar">Criar Evento</span>
-    <div class="eventoModal" id="eventoModal">
-        <h3>Adicionar Evento</h3>
-        <input type="date"   id="data"name="data" required>
-        <input type="text" id="evento"name="evento" placeholder="Descrição do Evento" required>
-        <button onclick="adicionarEvento()" type="submit" id="enviar" name="enviar">Adicionar</button>
-    </div>
-</form>
+        <div class="eventoModal" id="eventoModal">
+            <h3>Adicionar Evento</h3>
+            <input type="date" id="data" name="data" required>
+            <input type="text" id="evento" name="evento" placeholder="Descrição do Evento" required>
+            <button onclick="adicionarEvento()" type="submit" id="enviar" name="enviar">Adicionar</button>
+        </div>
+    </form>
 
-
+  
 
     <script src="javascript/agenda.js"></script>
 </body>

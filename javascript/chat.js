@@ -31,7 +31,7 @@ function verificarEventos() {
 
     setTimeout(function() {
         var linkVerificarEventos = document.getElementById('linkVerificarEventos');
-        linkVerificarEventos.href = 'agenda.php'; // Substitua pelo destino desejado
+        linkVerificarEventos.href = 'quadroeventos.html'; // Substitua pelo destino desejado
         linkVerificarEventos.click();
     }, 2000); // Espera 2 segundos antes de redirecionar
 }
