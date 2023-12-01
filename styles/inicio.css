@@ -27,6 +27,17 @@ header {
   margin-right: 4vw;
 }
 
+.sair{
+  width: 10%;
+  cursor: pointer;
+  margin-left: 75rem;
+  margin-top: 1%;
+ 
+}
+.sair:hover{
+  color: red;
+  transition: 0.4s;
+}
 .cabecalho {
   display: flex;
   align-items: center;
@@ -34,6 +45,8 @@ header {
   justify-content: space-between;
   margin-left: 10px;
   size: 50px;
+  margin-top: 30%;
+  margin-left: -91rem;
 }
 
 .cabecalho a {
@@ -51,16 +64,17 @@ i#burguer {
   font-size: 40px;
   color: #fff;
   cursor: pointer;
-  margin-top: 20%;
+ 
 }
-
+.centerr{
+ display: flex;
+}
 .imagemm {
-  align-self:self-start;
+  margin-left: 7rem;
+  width: 30%;
 }
 
-.abelha {
-  image-orientation: calc(100 20);
-}
+
 
 
 
@@ -532,11 +546,7 @@ button:hover {
   color: #333;
   margin-top: 10px;
 }
-/* Adicione ao arquivo apresentacao.css */
 
-/* Adicione ao arquivo apresentacao.css */
-
-/* Adicione ao arquivo apresentacao.css */
 
 .apresentacao-container {
   display: flex;
@@ -585,6 +595,24 @@ button:hover {
   background-color: #0056b3;
 }
 
-/* Adicione ao seu arquivo de estilos CSS */
-
-/* Adicione ao seu arquivo de estilos CSS */
+@media (max-width: 400px){
+  .sair{
+    margin-left: 5rem;
+    width: 50%;
+  }
+ 
+  i#burguer{
+    height: 50px ;
+  }
+  .cabecalho{
+    margin-top: 14%;
+    margin-left: -92%;
+  }
+  footer > h3{
+    font-size: 30px;
+    display: flex;
+    background-color: transparent;
+    width: 190%;
+    margin-left: -40%;
+  }
+}

@@ -13,9 +13,7 @@
     <title>Login</title>
 </head>
 <body>
-<?php
-              
-            ?>
+
     <div class="container">
         <form action="php/loginempresa.php" class="login-form" method="post">
             <h1>Login empresa</h1>

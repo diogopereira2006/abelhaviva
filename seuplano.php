@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+
+     
+
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -89,6 +102,7 @@
         <div class="plan-info">
             <p><strong>Plano Atual:</strong> Plano Premium Anual</p>
             <p><strong>Status:</strong> Ativo</p>
+            <p><strong>Pagamento:</strong></p>
         </div>
 
         <button class="upgrade-button" onclick="openUpgradeModal()">Upgrade de Plano</button>

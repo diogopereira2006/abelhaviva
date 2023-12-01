@@ -77,7 +77,7 @@ $logado = $_SESSION['email'];
 						6X de 3099,99
 
 					</p>
-					<a class="card-btn" href="pagamento3.html">
+					<a class="card-btn" href="pagamento3.php">
 						GARANTIR PLANO 
 
 					</a>
@@ -101,7 +101,7 @@ $logado = $_SESSION['email'];
 						12X de 3599,99
 
 					</p>
-					<a class="card-btn" href="pagamento2.html">
+					<a class="card-btn" href="pagamento2.php">
 						GARANTIR PLANO 
 
 					</a>

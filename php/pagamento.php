@@ -3,6 +3,7 @@ session_start();
 require_once "conexao.php";
 
 
+
 if(isset($_POST['enviar'])){
     $opcaopagamento = $_POST ["opcaopagamento"];
     $nomes = $_POST ["nomes"];
@@ -14,13 +15,19 @@ if(isset($_POST['enviar'])){
     $cvvcartao = $_POST ["cvvcartao"];
 
 
-$sql = "INSERT INTO pagamentos (opcao, nome_completo, nome_titular,numero_cartao, cpf,validade_cartao,cvv_cartao, endereco) VALUES ('$opcaopagamento', '$nomes', '$nometitular', '$numerocartao', '$cpfboleto','$validadecartao','$cvvcartao', '$enderecoboleto')";
+$sql = "INSERT INTO pagamentos (opcao, nome_completo, nome_titular,numero_cartao, cpf,validade_cartao,cvv_cartao, endereco) VALUES('$opcaopagamento', '$nomes', '$nometitular', '$numerocartao', '$cpfboleto','$validadecartao','$cvvcartao', '$enderecoboleto')";
+
+
+
+
+
+
 
 $resultado = mysqli_query($con, $sql);
 if ($resultado) {
     echo "<script>alert('pagamento realizado com sucesso !');
          alert('Obrigado por ce juntar a beealive.');
-        window.location.href = '../inicio.html'</script>";
+        window.location.href = '../seuplano.php'</script>";
 }else{
     echo "Erro em cadastrar!". mysqli_connect_error();
 }

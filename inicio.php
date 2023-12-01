@@ -27,11 +27,19 @@ session_start();
 <body>
 
     <header>
-        <div> 
+        <div class="centerr"> 
+        
           <i id="burguer"class="material-symbols-outlined" onclick="clickMenu()"> menu </i>
+        <form action="saircessao.php" method="post">
+        <input type="submit" value="sair" class="sair">
+        </form>
+
+
             <div class="imagemm">
             <img  class="abelha"src="img/BEEALIVE.png" width="100px">
         </div>
+        
+    
         <div class="cabecalho"  id="menu" onclick="clickLog()" style="display:none;">
         <a href="loginempresa.php">Login</a> <br>
         <a href="cadastroemp.php">Cadastre sua empresa</a> <br>
@@ -41,6 +49,7 @@ session_start();
         <a href="planos.php">Nossos Planos</a> <br>
           </div>
         </div>
+        
 
     </header>
     
@@ -122,24 +131,24 @@ session_start();
   </div>
   <div class="dados">
       <h1>Agendar Reunião</h1>
-      <form action="#">
+      <form action="#" method="post">
           <label for="firstname">Primeiro Nome:</label>
-          <input id="firstname" type="text" name="firstname" placeholder="Digite seu Primeiro Nome" required>
+          <input type="text" id="firstname"  name="firstname" placeholder="Digite seu Primeiro Nome" required>
 
           <label for="lastname">Sobrenome:</label>
-          <input id="lastname" type="text" name="lastname" placeholder="Digite seu Sobrenome" required>
+          <input type="text id="lastname"" name="lastname" placeholder="Digite seu Sobrenome" required>
 
           <label for="email">Email:</label>
-          <input id="email" type="text" name="email" placeholder="Digite seu Email" required>
+          <input type="text"id="email"  name="email" placeholder="Digite seu Email" required>
 
           <label for="fone">Telefone:</label>
-          <input id="fone" type="text" name="fone" placeholder="(xx) xxxx-xxxx" required>
+          <input type="text"id="fone"  name="fone" placeholder="(xx) xxxx-xxxx" required>
 
           <label>Descreva suas necessidades atuais:</label>
-          <textarea class="textarea" type="text" placeholder="Necessidades" name="textarea" rows="4" required></textarea>
+          <textarea type="text" class="textarea" placeholder="Necessidades" name="textarea" rows="4" required></textarea>
 
           <label>Qual o melhor dia para você?</label>
-          <input type="text" placeholder="(MM/DD/YYYY)" name="date" required>
+          <input type="date" placeholder="(MM/DD/YYYY)" name="date" required>
 
           <label>Qual o melhor horário para você?</label>
           <input type="time" placeholder="Melhor horário" name="time">
