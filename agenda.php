@@ -1,5 +1,13 @@
 <?php
 session_start();
+require_once "php/conexao.php";
+
+$evento = $_SESSION['evento'];
+$data = $_SESSION['data'];{
+
+    $sql = "SELECT * FROM eventos WHERE data_evento = '$data' and descricao_evento = '$evento' ";
+
+}
 
 {
 
@@ -53,6 +61,8 @@ session_start();
 </form>
 <div class="quadro-eventos" id="quadroEventos">
     <h2>Quadro de Eventos</h2>
+    <string>data:<p><?=$data?></p></string>
+    <string>evento:<P><?=$evento?></P></string>
 </div>
 
 
