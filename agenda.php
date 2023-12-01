@@ -51,6 +51,10 @@ session_start();
         <button onclick="adicionarEvento()" type="submit" id="enviar" name="enviar">Adicionar</button>
     </div>
 </form>
+<div class="quadro-eventos" id="quadroEventos">
+    <h2>Quadro de Eventos</h2>
+</div>
+
 
     <script src="javascript/agenda.js"></script>
 </body>

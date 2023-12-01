@@ -50,13 +50,8 @@ echo "bem vindo <h1>$email</h1>";
                 </span></h2>
                 
                 <div class="data">
-<<<<<<< HEAD
                     <a href="agenda.php">Sua Agenda</h3>
                     <a href="chat.php">Chat</h3>
-=======
-                    <a href="agenda.php"><h3>Sua Agenda</h3></a>
-                    <a href="chat.php"><h3>Chat</h3></a>
->>>>>>> 2c462638f6f131c029b610dde352b75db91bef35
                 </div>
                 <div class="actionBtn" style="text-decoration: none; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
                     <a  href="seuplano.html" style="text-decoration: none; "><button>Seu Plano</button></a>

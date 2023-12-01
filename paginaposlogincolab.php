@@ -28,7 +28,6 @@ $sobrenome = $_SESSION['sobrenome'];{
             <img src="http://placecage.com/100/100" alt="Imagem de perfil" id="profileImage">
         </label>
         <input type="file" accept="image/*" id="inputImage" onchange="previewImage(event)">
-
     
         <div class="content">
             <div class="details">

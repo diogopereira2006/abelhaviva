@@ -150,10 +150,76 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Seu CSS existente ... */
-/* Seu CSS existente ... */
+/* Adicione este estilo ao seu CSS */
 
-/* Seu CSS existente ... */
+.quadro-eventos {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.evento {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.evento .data {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.evento .descricao {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+/* Estilo para o botão de adicionar evento */
+.fechar {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.fechar:hover {
+    background-color: #0056b3;
+}
+
+#quadroEventos {
+    text-align: left;
+    margin-top: 10px; /* Ajuste o valor conforme necessário */
+}
+
+#tituloQuadro {
+    margin-top: 0;
+}
+
+.evento {
+    margin-bottom: 10px;
+}
+
+.data {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.descricao {
+    /* Adicione estilos conforme necessário */
+}
+
 
 @media (max-width: 600px) {
     .dias-semana,
@@ -162,26 +228,72 @@ button:hover {
         grid-template-columns: repeat(7, 1fr);
         grid-gap: 2px;
         text-align: center;
+        margin-bottom: 10px;
     }
 
     .dias-semana div,
     .dias div {
         width: 100%;
         font-size: 14px;
+        padding: 5px;
     }
 
     .criarEventoForm span {
         width: 100%;
-        margin: 5px 0;
+        margin: 10px 0;
         text-align: center;
         font-size: 16px;
     }
-    
+
     .button {
         width: 100%;
-        align-items: center;
+        margin-top: 10px;
+        text-align: center;
     }
-}
 
+    .calendario {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .quadro-eventos {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .fechar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #quadroEventos {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    #tituloQuadro {
+        margin-top: 0;
+    }
+
+    .evento {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .evento .data {
+        font-weight: bold;
+        color: #007bff;
+        margin-bottom: 5px;
+    }
+
+    .evento .descricao {
+        margin-left: 0;
+    }
+
+}
 
 

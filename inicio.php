@@ -38,11 +38,7 @@ session_start();
         <a href="cadastro.php">Cadastre seu colaborador</a> <br>
         <a href="solucoes.html">Nossas Soluções</a> <br>
         <a href="profissionais.php">Conheça nossos profissionais</a> <br>
-<<<<<<< HEAD
         <a href="planos.php">Nossos Planos</a> <br>
-=======
-        <a href="planos.php">Conheça nossos planos</a> <br>
->>>>>>> 2c462638f6f131c029b610dde352b75db91bef35
           </div>
         </div>
 
