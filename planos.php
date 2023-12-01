@@ -10,8 +10,10 @@ if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)
 	header('location:loginempresa.php');
 
 	
+}else{
+	$logado = $_SESSION['email'];
+
 }
-$logado = $_SESSION['email'];
 
 ?>
 

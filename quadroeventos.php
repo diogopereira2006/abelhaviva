@@ -1,3 +1,20 @@
+<?php
+session_start();
+include_once "php/conexao.php";
+
+$evento = $_SESSION['evento'];
+$data = $_SESSION['data'];{
+
+
+}
+
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,15 +29,11 @@
         <h2>Quadro de Eventos</h2>
         <div class="evento">
             <strong>Data:</strong>
-            <p><?php 
-                echo isset($_GET['data']) ? htmlspecialchars($_GET['data']) : ''; 
-                ?></p>
+            <p><?=$data?></p>
         </div>
         <div class="evento">
             <strong>Evento:</strong>
-            <p><?php 
-                echo isset($_GET['evento']) ? htmlspecialchars($_GET['evento']) : ''; 
-                ?></p>
+            <p><?=$evento?></p>
         </div>
         <!-- Adicione mais eventos conforme necessário -->
     </div>

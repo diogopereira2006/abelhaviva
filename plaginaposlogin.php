@@ -1,7 +1,8 @@
 <?php
 require_once "php/conexao.php";
 session_start();
-$email = $_SESSION['email'];{
+$email = $_SESSION['email'];
+$empresa = $_SESSION['empresa'];{
     
 }
 
@@ -11,8 +12,9 @@ if(isset($_POST['enviar']) && !empty($_POST['email']))
 {
     $email = $_POST['email'];
 
+
     $sql = "SELECT * FROM cadastro_empresa WHERE email_institu = '$email'";
-    // $resultado = mysqli_query($con, $sql);
+    $resultado = mysqli_query($con, $sql);
     // echo "<pre>";
     // var_dump($resultado);
     // echo "</pre>";
@@ -47,12 +49,12 @@ echo "bem vindo <h1>$email</h1>";
 
         <div class="content">
             <div class="details">
-                <h2>Nestlé <br><span>Perfil Empresa
+                <h2><?=$empresa?> <br><span>Perfil Empresa
                 </span></h2>
                 
                 <div class="data">
                     <a href="agenda.php"><h3>Sua Agenda</h3></a>
-                    <a href="chat.php"><h3>Chat</h3></a>
+                    <a href="chatemp.php"><h3>Chat</h3></a>
                 </div>
                 <div class="actionBtn" style="text-decoration: none; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
                     <a  href="seuplano.php" style="text-decoration: none; "><button>Seu Plano</button></a>

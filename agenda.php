@@ -5,7 +5,6 @@ require_once "php/conexao.php";
 $evento = $_SESSION['evento'];
 $data = $_SESSION['data'];{
 
-    $sql = "SELECT * FROM eventos WHERE data_evento = '$data' and descricao_evento = '$evento' ";
 
 }
 
@@ -51,7 +50,7 @@ $data = $_SESSION['data'];{
             <div>Sab</div>
         </div>
         <div class="dias" id="dias"></div>
-        <a href="quadroeventos.html">Verificar Eventos</a>
+        <a href="quadroeventos.php">Verificar Eventos</a>
     </div>
 
     <form action="php/agenda.php" method="post" class="criarEventoForm">
