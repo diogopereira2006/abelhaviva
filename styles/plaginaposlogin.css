@@ -160,6 +160,25 @@ body {
     border-radius: 50%;
     padding: 9px;
 }
+.left,
+.right {
+    width: 20px;
+    height: 20px;
+    transition: .5s;
+    float: left;
+    box-shadow: -2px 2px 0 black;
+  
+    align-items: left;
+}
+
+.left {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px; /* Ajuste a posição conforme necessário */
+    left: 10px; /* Ajuste a posição conforme necessário */
+
+    transform: rotate(45deg);
+}
 
     @media (max-width: 600px) {
         .card {
@@ -178,6 +197,11 @@ body {
         .card .content .details .data {
             flex-direction: column; /* Alinhar dados verticalmente em telas menores */
             align-items: center;
+        }
+        .left {
+            position: fixed;
+            top: 10px; /* Ajuste a posição conforme necessário para telas menores */
+            left: 10px; /* Ajuste a posição conforme necessário para telas menores */
         }
     }
     

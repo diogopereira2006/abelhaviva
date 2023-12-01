@@ -21,6 +21,8 @@ $sobrenome = $_SESSION['sobrenome'];{
 <link rel="stylesheet" type="text/css" href="styles/plaginaposlogin.css">
 </head>
 <body>
+    <a href="inicio.php">
+    <div class="left"></div></a>
 
 
     <div class="card">
