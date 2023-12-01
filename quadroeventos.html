@@ -8,16 +8,24 @@
 </head>
 <body>
     
-    <div class="quadro-eventos">
-        <h1>Seu Quadro de Eventos</h1>
-        <section id="quadroEventos">
-            <!-- Eventos serão adicionados aqui -->
-        </section>
+    <div class="quadro-eventos" id="quadroEventos">
+        <h2>Quadro de Eventos</h2>
+        <div class="evento">
+            <strong>Data:</strong>
+            <p><?php 
+                echo isset($_GET['data']) ? htmlspecialchars($_GET['data']) : ''; 
+                ?></p>
+        </div>
+        <div class="evento">
+            <strong>Evento:</strong>
+            <p><?php 
+                echo isset($_GET['evento']) ? htmlspecialchars($_GET['evento']) : ''; 
+                ?></p>
+        </div>
+        <!-- Adicione mais eventos conforme necessário -->
     </div>
-    
-
-    
 
     <script src="quadro.js"></script>
 </body>
 </html>
+

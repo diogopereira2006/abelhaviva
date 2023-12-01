@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once "conexao.php";
 
 
@@ -9,10 +9,17 @@ if(isset($_POST['enviar'])){
     $evento = $_POST["evento"];
 
 
-    $sql = "INSERT INTO eventos (data_evento, descricao_evento) VALUES ('$data', '$evento')";
+    $sql = "SELECT * FROM eventos WHERE data_evento = '$data' and descricao_evento = '$evento'";
     
 
-$resultado = mysqli_query($con, $sql);
+    $result = $con->query($sql);
+
+$resultado = mysqli_fetch_array($result);
+$data = $resultado[1];
+$evento = $resultado[2];
+
+$_SESSION['data'] = $data;
+$_SESSION['evento'] = $evento;
 if ($resultado) {
     echo "<script>alert('adicionado com sucesso !');
         window.location.href = '../agenda.php'</script>";

@@ -1,5 +1,13 @@
 <?php
 session_start();
+require_once "php/conexao.php";
+
+$evento = $_SESSION['evento'];
+$data = $_SESSION['data'];{
+
+    $sql = "SELECT * FROM eventos WHERE data_evento = '$data' and descricao_evento = '$evento' ";
+
+}
 
 {
 
@@ -51,6 +59,7 @@ session_start();
         <button onclick="adicionarEvento()" type="submit" id="enviar" name="enviar">Adicionar</button>
     </div>
 </form>
+
 
 
     <script src="javascript/agenda.js"></script>

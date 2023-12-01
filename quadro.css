@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #fbda61, #29ace0);
+}
+
+.quadro-eventos {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.evento {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.evento strong {
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+.evento p {
+    margin: 0;
+    color: #555;
+}
+
