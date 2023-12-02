@@ -131,29 +131,29 @@ session_start();
   </div>
   <div class="dados">
       <h1>Agendar Reunião</h1>
-      <form action="#" method="post">
+      <form action="php/formulario.php" method="post">
           <label for="firstname">Primeiro Nome:</label>
-          <input type="text" id="firstname"  name="firstname" placeholder="Digite seu Primeiro Nome" required>
+          <input type="text" id="nome"  name="nome" placeholder="Digite seu Primeiro Nome" required>
 
           <label for="lastname">Sobrenome:</label>
-          <input type="text id="lastname"" name="lastname" placeholder="Digite seu Sobrenome" required>
+          <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu Sobrenome" required>
 
           <label for="email">Email:</label>
           <input type="text"id="email"  name="email" placeholder="Digite seu Email" required>
 
           <label for="fone">Telefone:</label>
-          <input type="text"id="fone"  name="fone" placeholder="(xx) xxxx-xxxx" required>
+          <input type="text"id="telefone"  name="telefone" placeholder="(xx) xxxx-xxxx" required>
 
           <label>Descreva suas necessidades atuais:</label>
-          <textarea type="text" class="textarea" placeholder="Necessidades" name="textarea" rows="4" required></textarea>
+          <textarea type="text" id="textarea" class="textarea" placeholder="Necessidades" name="textarea" rows="4" required></textarea>
 
           <label>Qual o melhor dia para você?</label>
-          <input type="date" placeholder="(MM/DD/YYYY)" name="date" required>
+          <input type="date" id="data" placeholder="(MM/DD/YYYY)" name="data" required>
 
           <label>Qual o melhor horário para você?</label>
-          <input type="time" placeholder="Melhor horário" name="time">
+          <input type="time" id="time"  placeholder="Melhor horário" name="time">
 
-          <button type="submit">Agendar</button>
+          <button type="submit" id="enviar" name="enviar">Agendar</button>
       </form>
   </div>
 </div>
