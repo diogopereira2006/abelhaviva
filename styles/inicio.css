@@ -28,9 +28,9 @@ header {
 }
 
 .sair{
-  width: 10%;
+  width: 5%;
   cursor: pointer;
-  margin-left: 75rem;
+  margin-left: 65rem;
   margin-top: 1%;
  
 }
@@ -43,10 +43,10 @@ header {
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  margin-left: 10px;
+  
   size: 50px;
-  margin-top: 30%;
-  margin-left: -91rem;
+  margin-top: 10%;
+  margin-left: -117%;
 }
 
 .cabecalho a {
@@ -595,24 +595,52 @@ button:hover {
   background-color: #0056b3;
 }
 
-@media (max-width: 400px){
-  .sair{
-    margin-left: 5rem;
-    width: 50%;
+
+
+
+@media only screen and (max-width: 1200px) {
+  .sair {
+    margin-left: 2vw; /* Adjusted margin for responsiveness */
   }
- 
-  i#burguer{
-    height: 50px ;
+
+  .cabecalho {
+    margin-left: -60rem; /* Adjusted margin for responsiveness */
   }
-  .cabecalho{
-    margin-top: 14%;
-    margin-left: -92%;
+
+  .imagemm {
+    margin-left: 2rem; /* Adjusted margin for responsiveness */
+    width: 20%; /* Adjusted width for responsiveness */
   }
-  footer > h3{
-    font-size: 30px;
-    display: flex;
-    background-color: transparent;
-    width: 190%;
-    margin-left: -40%;
+}
+@media only screen and (max-width: 600px) {
+  .sair {
+    width: 40%;
+    font-size: 14px;
+  }
+
+  .cabecalho {
+    margin-left: -72%;
+    margin-top: 10%;
+  }
+
+  .imagemm {
+    margin-left: 1rem;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .sair {
+    width: 60%;
+    font-size: 16px;
+  }
+
+  .cabecalho {
+    margin-top: 15%;
+  }
+
+  .imagemm {
+    margin-left: 0;
+    width: 60%;
   }
 }
