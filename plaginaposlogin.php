@@ -49,8 +49,7 @@ echo "bem vindo <h1>$email</h1>";
 
         <div class="content">
             <div class="details">
-                <h2><?=$empresa?> <br><span>Perfil Empresa
-                </span></h2>
+                <h2><?=$empresa?> <br><span>Perfil Empresa</span></h2>
                 
                 <div class="data">
                     <a href="agenda.php"><h3>Sua Agenda</h3></a>
@@ -72,21 +71,9 @@ echo "bem vindo <h1>$email</h1>";
             }
         </style>
         
-
+        <script src="javascript/plaginaposlogin.js"></script>
    
 
-        <script>
-        function irParaOutraPagina() {
-            window.location.href = 'seuplano.html'; 
-        }
-        
-        function irParaOutraPagina() {
-                window.location.href = 'seuplano.html';
-            }
-
-            function irParaTelaInicial() {
-                window.location.href = 'inicio.php'; // Substitua pelo destino desejado
-            }
-        </script>
+       
 </body>
 </html>

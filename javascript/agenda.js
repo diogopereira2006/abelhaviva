@@ -1,186 +1,89 @@
-let dataAtual = new Date();
-let mesAtual = dataAtual.getMonth();
-let anoAtual = dataAtual.getFullYear();
+let selectedDate;
+  let events = [];
+  let currentMonth = new Date().getMonth();
+  let currentYear = new Date().getFullYear();
 
-function gerarCalendario(mes, ano) {
-    const diasContainer = document.getElementById("dias");
-    const titulo = document.getElementById("titulo");
+  function showEventInput(date) {
+    selectedDate = date;
+    document.getElementById('event-date').value = date;
+    document.getElementById('event-input').style.display = 'block';
+  }
 
-    diasContainer.innerHTML = "";
-    titulo.innerHTML = `${getNomeMes(mes)} ${ano}`;
+  function addEvent() {
+    const eventDescription = document.getElementById('event-description').value;
+    if (eventDescription.trim() !== "") {
+      events.push({ date: selectedDate, description: eventDescription });
+      document.getElementById('event-description').value = ''; // Limpar a caixa de texto
+    }
+  }
 
-    const primeiroDia = new Date(ano, mes, 1);
-    const ultimoDia = new Date(ano, mes + 1, 0);
+  function finishAddingEvents() {
+    if (events.length > 0) {
+      // Armazenar os eventos em localStorage para acessar na próxima página
+      localStorage.setItem('events', JSON.stringify(events));
+      
+      // Redirecionar para a página de verificação de eventos
+      window.location.href = 'vereventos.php';
+    }
+  }
 
-    for (let i = 1; i <= ultimoDia.getDate(); i++) {
-        const dia = new Date(ano, mes, i);
-        const divDia = document.createElement("div");
-        divDia.innerText = i;
+  function generateCalendar() {
+    const firstDay = new Date(currentYear, currentMonth, 1);
+    const lastDay = new Date(currentYear, currentMonth + 1, 0);
+    const daysInMonth = lastDay.getDate();
 
-        if (i === dataAtual.getDate() && mes === mesAtual && ano === anoAtual) {
-            divDia.classList.add("hoje");
+    const tableBody = document.getElementById('calendar-body');
+    tableBody.innerHTML = ''; // Limpe o conteúdo anterior
+
+    document.getElementById('month-year').textContent = `${getMonthName(currentMonth)} ${currentYear}`;
+
+    let day = 1;
+    for (let i = 0; i < 6; i++) {
+      const row = tableBody.insertRow();
+
+      for (let j = 0; j < 7; j++) {
+        if (i === 0 && j < firstDay.getDay()) {
+          const cell = row.insertCell();
+          cell.textContent = "";
+        } else if (day > daysInMonth) {
+          break;
+        } else {
+          const cell = row.insertCell();
+          cell.textContent = day;
+
+          const date = new Date(currentYear, currentMonth, day);
+          cell.addEventListener('click', () => showEventInput(date.toLocaleDateString()));
+
+          day++;
         }
-
-        diasContainer.appendChild(divDia);
+      }
     }
-}
+  }
 
-function getNomeMes(mes) {
-    const nomesMeses = [
-        "Janeiro", "Fevereiro", "Março",
-        "Abril", "Maio", "Junho",
-        "Julho", "Agosto", "Setembro",
-        "Outubro", "Novembro", "Dezembro"
+  function getMonthName(month) {
+    const monthNames = [
+      "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+      "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
     ];
-    return nomesMeses[mes];
-}
+    return monthNames[month];
+  }
 
-function mudarMes(valor) {
-    mesAtual += valor;
-    if (mesAtual > 11) {
-        mesAtual = 0;
-        anoAtual++;
-    } else if (mesAtual < 0) {
-        mesAtual = 11;
-        anoAtual--;
+  function prevMonth() {
+    currentMonth--;
+    if (currentMonth < 0) {
+      currentMonth = 11;
+      currentYear--;
     }
-    gerarCalendario(mesAtual, anoAtual);
-}
+    generateCalendar();
+  }
 
-// No início do arquivo agenda.js
-
-// ... (código existente)
-
-// Função para abrir o modal de adição de evento
-function abrirModal() {
-    var modal = document.getElementById("eventoModal");
-    modal.style.display = "none";
-}
-
-// Função para fechar o modal de adição de evento
-function fecharModal() {
-    var modal = document.getElementById("eventoModal");
-    modal.style.display = "block";
-}
-
-// Função para adicionar um evento ao calendário
-function adicionarEvento() {
-    var data = document.getElementById("dataEvento").value;
-    var descricao = document.getElementById("descricaoEvento").value;
-
-    // Adicione aqui a lógica para salvar o evento na data especificada
-
-    // Por exemplo, você pode exibir o evento no console por enquanto
-    console.log("Evento adicionado em " + data + ": " + descricao);
-
-    fecharModal(); // Fecha o modal após adicionar o evento
-}
-
-// ... (restante do código)
-
-
-gerarCalendario(mesAtual, anoAtual);
-
-// No início do arquivo agenda.js
-
-// ... (código existente)
-
-// ... (código existente)
-
-let eventos = []; // Adiciona essa linha para armazenar os eventos
-
-function adicionarEvento() {
-    var data = document.getElementById("data").value; // Altera para "data"
-    var descricao = document.getElementById("evento").value; // Altera para "evento"
-
-    // Cria um objeto representando o evento
-    var novoEvento = {
-        data: data,
-        descricao: descricao
-    };
-
-    // Adiciona o evento ao array de eventos
-    eventos.push(novoEvento);
-
-    // Atualiza o quadro de eventos
-    atualizarQuadroEventos();
-
-    fecharModal(); // Fecha o modal após adicionar o evento
-}
-
-function atualizarQuadroEventos() {
-    var quadroEventos = document.getElementById("quadroEventos");
-    quadroEventos.innerHTML = ""; // Limpa o conteúdo atual do quadro
-
-    // Ordena os eventos por data (assumindo formato YYYY-MM-DD)
-    eventos.sort((a, b) => a.data.localeCompare(b.data));
-
-    // Adiciona os eventos ao quadro
-    eventos.forEach(evento => {
-        var divEvento = document.createElement("div");
-        divEvento.classList.add("evento");
-
-        var spanData = document.createElement("span");
-        spanData.classList.add("data");
-        spanData.textContent = evento.data;
-
-        var spanDescricao = document.createElement("span");
-        spanDescricao.classList.add("descricao");
-        spanDescricao.textContent = evento.descricao;
-
-        divEvento.appendChild(spanData);
-        divEvento.appendChild(spanDescricao);
-
-        quadroEventos.appendChild(divEvento);
-    });
-}
-// ... (código existente)
-
-function atualizarQuadroEventos() {
-    var quadroEventos = document.getElementById("quadroEventos");
-    var tituloQuadro = document.getElementById("tituloQuadro");
-
-    quadroEventos.innerHTML = ""; // Limpa o conteúdo atual do quadro
-
-    // Ordena os eventos por data (assumindo formato YYYY-MM-DD)
-    eventos.sort((a, b) => a.data.localeCompare(b.data));
-
-    // Adiciona os eventos ao quadro
-    eventos.forEach(evento => {
-        var divEvento = document.createElement("div");
-        divEvento.classList.add("evento");
-
-        var spanData = document.createElement("span");
-        spanData.classList.add("data");
-        spanData.textContent = evento.data;
-
-        var spanDescricao = document.createElement("span");
-        spanDescricao.classList.add("descricao");
-        spanDescricao.textContent = evento.descricao;
-
-        divEvento.appendChild(spanData);
-        divEvento.appendChild(spanDescricao);
-
-        quadroEventos.appendChild(divEvento);
-    });
-
-    // Atualiza o título do quadro
-    tituloQuadro.textContent = "Seu Quadro de Eventos";
-
-    // Exibe mensagem se o quadro estiver vazio
-    if (eventos.length === 0) {
-        var mensagemVazia = document.createElement("p");
-        mensagemVazia.textContent = "Seu quadro de eventos está vazio.";
-        quadroEventos.appendChild(mensagemVazia);
+  function nextMonth() {
+    currentMonth++;
+    if (currentMonth > 11) {
+      currentMonth = 0;
+      currentYear++;
     }
-    function verificarEventos() {
-        window.location.href = 'quadroeventos.html';
-        console.log("Verificando eventos...");
-    }
-}
+    generateCalendar();
+  }
 
-// ... (restante do código)
-
-
-// ... (restante do código)
-
+  generateCalendar();

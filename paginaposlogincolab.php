@@ -35,8 +35,6 @@ $sobrenome = $_SESSION['sobrenome'];{
             <div class="details">
                 <h2><?=$nome?> <?=$sobrenome?><br><span>Perfil Colaborador</span></h2>
                 <div class="data">
-                    
-                    
                     <a href="suaemp.html">Sua empresa</a>
                     <a href="info.html">Info</a>
                 </div>

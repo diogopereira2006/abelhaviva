@@ -1,247 +1,104 @@
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background: linear-gradient(45deg, #fbda61, #29ace0);
-}
-
-.calendario {
-    text-align: center;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    margin: 20px;
+    background: linear-gradient(45deg, #fbda61, #29ace0) no-repeat;
+    height: 46vw;
+  }
+  .calendar {
     max-width: 600px;
-    width: 100%;
-    margin: auto;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.header button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.header button:hover {
-    background-color: #0056b3;
-}
-
-.dias-semana {
-    display: flex;
-    justify-content: space-around;
-    background-color: #f7f7f7;
-    padding: 10px;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.dias div {
-    display: inline-block;
-    width: 14%;
-    margin: 5px;
-    padding: 10px;
-    border: none;
+    margin: 0 auto;
     background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .evento{
+    cursor: pointer;
+    background-color: #3498db;
+    padding: 15px 40px;
+    border-radius: 20px;
+    width: 15%;
+    margin-left: 40%;
     text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    border-radius: 5px;
-    box-sizing: border-box;
+    margin-top: 10px;
 }
-
-.dias-semana, .dias {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.evento a{
+    text-decoration: none;
+    color: white;
+    
 }
-
-.hoje {
-    background-color: #007bff;
-    color: #007bff;
-}
-
-.eventoModal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fefefe;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.fechar {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-    color: #007bff;
-}
-
-input[type="date"] {
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-input[type="text"] {
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Seu CSS existente */
-
-.criarEventoForm {
-    display: flex;
-    justify-content: space-between;
+  .calendar-header {
+    background-color: #3498db;
+    color: #fff;
     text-align: center;
-    margin-top: 20px;
-    align-items: center;
-}
-
-.criarEventoForm span,
-.criarEventoForm button {
-    background-color: #007bff;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .calendar-table th,
+  .calendar-table td {
+    text-align: center;
+    padding: 8px; /* Reduzido o tamanho do padding */
+    font-size: 14px; /* Reduzido o tamanho da fonte */
+    border: 1px solid #ddd;
+  }
+  .calendar-table th {
+    background-color: #3498db;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
+  }
+  .calendar-table td {
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.criarEventoForm span:hover,
-.criarEventoForm button:hover {
-    background-color: #0056b3;
-}
-
-.verificarEventos {
-    background-color: #28a745;
-    color: #fff;
-    border: none;
+  }
+  .calendar-table td:hover {
+    background-color: #f2f2f2;
+  }
+  .event-input{
+    text-align: center;
+    width: 60%;
+    height: 300px;
+    margin-left: 20%;
+    display:none ;
+    box-shadow: 1px 1px 1px 1px black;
+  }
+  button{
+    margin-top: 8%;
     padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 20px; /* Adiciona margem ao botão para separá-lo do formulário */
-}
-
-.verificarEventos:hover {
-    background-color: #218838;
-}
-
-
-@media (max-width: 600px) {
-    .dias-semana,
-    .dias {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-gap: 2px;
-        text-align: center;
-        margin-bottom: 10px;
+  }
+  input{
+    padding: 10px 13px;
+  }
+  @media (max-width: 400px) {
+    .calendar {
+      border-radius: 0;
+    }
+    .calendar-header,
+    .calendar-table th,
+    .calendar-table td {
+      font-size: 12px; /* Ajuste para dispositivos de tela menores */
     }
 
-    .dias-semana div,
-    .dias div {
-        width: 100%;
-        font-size: 14px;
-        padding: 5px;
+    .event-input {
+      display:none ;
+      background-color: transparent;
+      box-shadow: 1px 1px 1px 1px black;
+      
+      
     }
-
-    .criarEventoForm span {
-        width: 100%;
-        margin: 10px 0;
-        text-align: center;
-        font-size: 16px;
-    }
-
-    .button {
-        width: 100%;
-        margin-top: 10px;
-        text-align: center;
-    }
-
-    .calendario {
-        max-width: 100%;
-        padding: 10px;
-    }
-
-    .quadro-eventos {
-        margin-top: 10px;
-        padding: 10px;
-    }
-
-    .fechar {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    #quadroEventos {
-        text-align: left;
-        margin-top: 10px;
-    }
-
-    #tituloQuadro {
-        margin-top: 0;
-    }
-
     .evento {
-        margin-bottom: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
+      text-align: center;
+      margin-top: 10px;
+      width: 40%;
+      margin-left: 20%;
+      
     }
-
-    .evento .data {
-        font-weight: bold;
-        color: #007bff;
-        margin-bottom: 5px;
-    }
-
-    .evento .descricao {
-        margin-left: 0;
-    }
-
-}
+  body{
+    height: 200vw;
+  }
 
 
+  }
+  

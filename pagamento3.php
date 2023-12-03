@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="styles/checkout.css">
 </head>
 <body>
+    <style>
+
+        .botao-pagamento{
+            margin-left: -21%;
+        }
+    </style>
     <form action="php/pagamento3.php" method="post">
     <div class="checkout">
         <h1>Escolha a forma de pagamento</h1>

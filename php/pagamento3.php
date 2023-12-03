@@ -20,7 +20,7 @@ $resultado = mysqli_query($con, $sql);
 if ($resultado) {
     echo "<script>alert('pagamento realizado com sucesso !');
      alert('Obrigado por ce juntar a beealive');
-    window.location.href = '../seuplano.html'</script>";
+    window.location.href = '../seuplano.php'</script>";
 }else{
     echo "Erro em cadastrar!". mysqli_connect_error();
 }

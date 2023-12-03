@@ -29,7 +29,7 @@ session_start();
     <header>
         <div class="centerr"> 
         
-          <i id="burguer"class="material-symbols-outlined" onclick="clickMenu()"> menu </i>
+        <i id="burguer"class="material-symbols-outlined" onclick="clickMenu()"> menu </i>
         <form action="saircessao.php" method="post">
         <input type="submit" value="sair" class="sair">
         </form>
