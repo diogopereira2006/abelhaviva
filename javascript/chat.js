@@ -31,7 +31,7 @@ function verificarEventos() {
 
     setTimeout(function() {
         var linkVerificarEventos = document.getElementById('linkVerificarEventos');
-        linkVerificarEventos.href = 'quadroeventos.html'; // Substitua pelo destino desejado
+        linkVerificarEventos.href = 'vereventos.php'; // Substitua pelo destino desejado
         linkVerificarEventos.click();
     }, 2000); // Espera 2 segundos antes de redirecionar
 }
@@ -90,7 +90,7 @@ const firebaseConfig = {
   });
   function conectarUsuario(elemento) {
     var nomeUsuario = elemento.getAttribute('data-usuario');
-    window.location.href = 'agenda.html?usuario=' + encodeURIComponent(nomeUsuario);
+    window.location.href = 'agenda.php?usuario=' + encodeURIComponent(nomeUsuario);
 }
 
 function conectarTelefone() {

@@ -173,3 +173,22 @@ function clickMenu(){
   
   
   /*fim da mensagem do botao ajuda*/
+  
+  //colocando o numero de telefone//
+
+  function conectarTelefone() {
+    // Obter o valor do campo de telefone
+    var numeroTelefone = document.getElementById("telefoneInput").value;
+
+    // Remover caracteres não numéricos do número de telefone
+    var numeroLimpo = numeroTelefone.replace(/\D/g, '');
+
+    // Número do WhatsApp
+    var numeroWhatsApp = "14988393894"
+
+    // Construir a URL do WhatsApp com o número preenchido
+    var urlWhatsApp = "https://api.whatsapp.com/send?phone=" + numeroWhatsApp;
+
+    // Redirecionar para o WhatsApp
+    window.location.href = urlWhatsApp;
+}

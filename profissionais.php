@@ -57,7 +57,7 @@ $logado = $_SESSION['email'];
           <i class='fas fa-star'></i>
         </div>
         <div class="btns">
-        <button>Contratar</button>
+        <button onclick="conectarTelefone()" id="telefoneInput">Contratar</button>
         <button onclick="saiba()">Saiba mais</button>
       </div>
       </li>
@@ -73,7 +73,7 @@ $logado = $_SESSION['email'];
           <i class='far fa-star'></i>
         </div>
         <div class="btns">
-        <button>Contratar</button>
+        <button  onclick="conectarTelefone()" id="telefoneInput">Contratar</button>
         <button onclick="saiba2()">Saiba mais</button>
       </div>
       </li>
@@ -90,7 +90,7 @@ $logado = $_SESSION['email'];
        
         </div>
         <div class="btns">
-        <button>Contratar</button>
+        <button  onclick="conectarTelefone()" id="telefoneInput">Contratar</button>
         <button onclick="saiba3()">Saiba mais</button>
       </div>
       </li>
@@ -108,7 +108,7 @@ $logado = $_SESSION['email'];
           
         </div>
         <div class="btns">
-        <button>Contratar</button>
+        <button  onclick="conectarTelefone()" id="telefoneInput">Contratar</button>
         <button onclick="saiba6()">Saiba mais</button>
       </div>
       </li>
@@ -125,7 +125,7 @@ $logado = $_SESSION['email'];
           
         </div>
         <div class="btns">
-        <button>Contratar</button>
+        <button  onclick="conectarTelefone()" id="telefoneInput">Contratar</button>
         <button onclick="saiba4()">Saiba mais</button>
       </div>
       </li>
@@ -141,7 +141,7 @@ $logado = $_SESSION['email'];
           <i class='fas fa-star'></i>
         </div>
         <div class="btns">
-        <button>Contratar</button>
+        <button  onclick="conectarTelefone()" id="telefoneInput">Contratar</button>
         <button onclick="saiba5()">Saiba mais</button>
       </div>
       </li>

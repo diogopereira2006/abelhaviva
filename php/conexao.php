@@ -1,6 +1,6 @@
 <?php
 
-$conexao = "local";
+$conexao = "online";
 
 if($conexao == "local"){
 

@@ -2,6 +2,8 @@
 session_start();
 
 
+
+
      
 
 
@@ -102,7 +104,6 @@ session_start();
         <div class="plan-info">
             <p><strong>Plano Atual:</strong> Plano Premium Anual</p>
             <p><strong>Status:</strong> Ativo</p>
-            <p><strong>Pagamento:</strong></p>
         </div>
 
         <button class="upgrade-button" onclick="openUpgradeModal()">Upgrade de Plano</button>
@@ -114,6 +115,7 @@ session_start();
             <select id="upgradeOptions">
                 <option value="plano-avancado">Plano Básico Semestral</option>
                 <option value="plano-premium">Plano Premium Semestral</option>
+                <option value="plano-premium">Plano Premium Anual</option>
             </select>
             <button onclick="confirmUpgrade()">Confirmar</button>
             <button onclick="closeUpgradeModal()">Cancelar</button>
